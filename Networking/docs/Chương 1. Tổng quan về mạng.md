@@ -56,9 +56,13 @@ Topo mạng gần giống như bản đồ đường phố, mô tả chi tiết 
 - Mạng chuyển mạch gói (packet-switched): Chuyển các packet đến thiết bị trung gian (Switch), sau đó căn cứ vào địa chỉ đích chuyển vào các thiết bị kế tiếp.
 ### 1.4. Địa chỉ mạng, định tuyến, tính tin cậy, tính liên tác và an ninh mạng
 **Địa chỉ:** là duy nhất để định danh các nút mạng
+
 **Routing - Định tuyến:** xác định đường mà dữ liệu sẽ đi qua từ nút nhận đến nút gửi, được thực hiện bởi router
+
 **Tính tin cậy:** Tính toàn vẹn dữ liệu, dữ liệu nhận giống với dữ liệu gửi
+
 **Tính liên tác:** Các thiết bị đa hãng có thể giao tiếp được với nhau
+
 **An ninh:** Bảo vệ mọi thứ trong mạng gồm dữ liệu, phương tiện truyền thông, các thiết bị. Còn bao gồm chức năng quản trị, công cụ kỹ thuật, thiết bị mã hoá, sản phẩm kiểm soát truy cập mạng
 ### 1.5. Chuẩn mạng
 - Chuẩn chính thức(De jure standard)
