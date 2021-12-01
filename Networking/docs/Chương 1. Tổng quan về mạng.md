@@ -24,8 +24,21 @@
 
 ![PAN](https://maychuvatly.com/wp-content/uploads/2020/12/personal-area-network-1.png)
 - Mạng cục bộ (Local Area Network - LAN): Sử dụng mạng trong 1 vùng địa lý có kích thước hạn chế. Ví dụ trong một trường học có nhiều phòng học.
+
+![LAN](https://cdn.tgdd.vn/Files/2015/01/06/596356/lan-la-gi--3.jpg)
+
 - Mạng diện rộng (Wide Area Network - WAN): Có thể coi gồm nhiều mạng LAN khác nhau, nằm trong vùng địa lý có ban kính trên 100km. Ví dụ: thị xã, thành phố, tỉnh, quốc gia.
+
+![WAN](https://stc.hnammobilecare.com/hcare/uploads/images/mang-wan-la-gi-phan-biet-mang-wan-va-mang-lan-11588170269.png)
+
 - Mạng đô thị (Metropolitan Area Network - MAN): có kích thước hoạt động nằm ở giữa LAN và WAN. 1 công ty có nhiều chi nhánh thuộc 1 thành phố.
+
+![MAN](https://vnptgroup.vn/wp-content/uploads/2020/08/khac-biet-giua-mang-lan-man-va-wan.jpg)
+
 - Mạng toàn cầu (Global Area Network - GAN): Gồm nhiều mạng WAN. 1 công ty hoạt động xuyên quốc gia
 
+![GAN](https://st.quantrimang.com/photos/image/2020/12/11/gan-global-area-network-1.jpg)
+
 - Mạng lưu trữ (Storage Area Network - SAN): là mạng không đặc trưng bởi quy mô, sử dụng để kết nối các máy chủ tới hệ thống lưu trữ dữ liệu.
+
+![SAN](https://www.ssla.co.uk/wp-content/uploads/2020/08/Storage-area-network-300x236.png)
