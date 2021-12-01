@@ -21,6 +21,7 @@
 ### 1.3. Phân loại mạng máy tính
 **Phân loại mạng theo diện hoạt động:**
 - Mạng cá nhân (Personal Area Network - PAN): Mạng sử dụng trong gia đình. Dễ dàng sử dụng các tài nguyên chung trong gia đình từ các vị trí khác nhau trong nhà.
+![PAN](https://maychuvatly.com/wp-content/uploads/2020/12/personal-area-network-1.png)
 - Mạng cục bộ (Local Area Network - LAN): Sử dụng mạng trong 1 vùng địa lý có kích thước hạn chế. Ví dụ trong một trường học có nhiều phòng học.
 - Mạng diện rộng (Wide Area Network - WAN): Có thể coi gồm nhiều mạng LAN khác nhau, nằm trong vùng địa lý có ban kính trên 100km. Ví dụ: thị xã, thành phố, tỉnh, quốc gia.
 - Mạng đô thị (Metropolitan Area Network - MAN): có kích thước hoạt động nằm ở giữa LAN và WAN. 1 công ty có nhiều chi nhánh thuộc 1 thành phố.
