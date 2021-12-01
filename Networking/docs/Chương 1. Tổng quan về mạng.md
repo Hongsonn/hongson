@@ -44,6 +44,7 @@
 ![SAN](https://www.ssla.co.uk/wp-content/uploads/2020/08/Storage-area-network-300x236.png)
 
 **Phân loại mạng theo mô hình kết nối**
+
 Topo mạng gần giống như bản đồ đường phố, mô tả chi tiết cách thức kết nối các nút mạng và các đường truyền
 - Mô hình point-to-point: Mỗi nút chỉ có thể liên lạc với nút liền kề, có nhiều nút.
   - Star: Có 1 hub xử lý trung tâm, có trách nhiệm truyền tin cho tất cả các nút. Hub hỏng thì hệ thống sụp đổ
