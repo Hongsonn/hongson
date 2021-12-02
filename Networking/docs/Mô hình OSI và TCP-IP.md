@@ -15,7 +15,7 @@
   - Tầng trình diễn (Presentation layer): Phiên dịch, mã hóa, nén dữ liệu.
   - Tầng ứng dụng (Application layer): Cung cấp giao diện, quản lý, truy cập và chuyển file
 
-  > Bộ giao thức TCP/IP 
+> Bộ giao thức TCP/IP 
 ### 1. Khái niệm:
   - Là giao thức phân cấp, được tạo bởi các module độc lập, mỗi module cung cấp 1 chức năng nhất định.
 ### 2. Mô hình:
