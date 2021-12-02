@@ -34,4 +34,5 @@
 - OSI ra mắt sau nhằm làm rõ các quá trinh nhưng không được sử dụng trong thực tế
 
 > Quá trình bắt tay 3 bước
+
 ![3buoc](https://static.cuongquach.com/resources/images/2017/08/3-buoc.png)

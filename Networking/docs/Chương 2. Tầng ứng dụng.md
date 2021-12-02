@@ -27,7 +27,7 @@ Internet cung cấp hai giao thức giao vận cho tầng ứng dụng: UDP và 
 ### 1.4. Một số ứng dụng phổ biến: 
 - Web, truyền file, thư điện tử, DNS.
 
-# II. Wordld wide web: HTTP
+# II. World wide web: HTTP
 ### 2.1. Tổng quan về HTTP:
 > Hyper Text Transfer Protocol (HTTP) - giao thức tầng ứng dụng của Web
 - Các vấn đề liên quan:
