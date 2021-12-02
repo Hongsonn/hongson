@@ -73,4 +73,4 @@ Topo mạng gần giống như bản đồ đường phố, mô tả chi tiết 
 - Chuẩn thực tế(De facto standard)
 - Chuẩn riêng của hãng
 - Chuẩn hiệp hội 
->>>>>>> 26efd872796f48f25bcfd78a992ce344055bfae4
+
