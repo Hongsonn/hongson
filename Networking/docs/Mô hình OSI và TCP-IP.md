@@ -23,5 +23,15 @@
 
 ![tcp/ip](https://adminvietnam.org/wp-content/uploads/2016/08/Capture1.png)
 
+- Lớp Application kiêm nhiệm vụ vai trò của lớp 5,6,7 của mô hình OSI . Các thực thể của lớp  Application cũng cung cấp giao tiếp đến người dùng, cung cấp các ứng dụng cho phép người dùng trao đổi dữ liệu ứng dụng qua mạng.
+- Lớp Transport đảm nhận nhiệm vụ giống như lớp Transport bên mô hình OSI. Hai giao thức nổi tiếng của tầng Tranport thuộc mô hình TCP/IP là TCP và UDP.
+- Lớp Internet có nhiệm vụ giống như lớp Network của mô hình OSI. 
+- Lớp Network Access đảm nhận nhiệm vụ của hai lớp Data Link và Physical của mô hình OSI
 
+> Khác nhau:
 
+- TCP ra mắt trước nhằm tạo ra 1 chuẩn chung
+- OSI ra mắt sau nhằm làm rõ các quá trinh nhưng không được sử dụng trong thực tế
+
+> Quá trình bắt tay 3 bước
+![3buoc](https://static.cuongquach.com/resources/images/2017/08/3-buoc.png)
