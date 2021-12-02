@@ -11,6 +11,7 @@
 
 ### 1.3. Dịch vụ của các giao thức giao vận Internet
 Internet cung cấp hai giao thức giao vận cho tầng ứng dụng: UDP và TCP
+
 **Giao thức TCP:** là hướng kết nối và cung cấp dịch vụ truyền dữ liệu tin cậy
 - Dịch vụ hướng nối (connection oriented):
   - Quá trình "bắt tay" cho phép client và server sẵn sàng xử lý các gói dữ liệu. 
@@ -23,24 +24,29 @@ Internet cung cấp hai giao thức giao vận cho tầng ứng dụng: UDP và 
 - Không đảm bảo thông điệp sẽ đến được cổng tiến trình nhận. 
 - Thông điệp tới đích có thể không đúng thứ tự
 - Không có cơ chế kiểm soát tắc nghẽn
-### 1.4. Một số ứng dụng phổ biến: Web, truyền file, thư điện tử, DNS.
+### 1.4. Một số ứng dụng phổ biến: 
+- Web, truyền file, thư điện tử, DNS.
+
 # II. Wordld wide web: HTTP
 ### 2.1. Tổng quan về HTTP:
 > Hyper Text Transfer Protocol (HTTP) - giao thức tầng ứng dụng của Web
 - Các vấn đề liên quan:
-  - Trang Web (Webpage - hay còn gọi là 1 tập tin) chứa các đối tượng (Object).\
+  - Trang Web (Webpage - hay còn gọi là 1 tập tin) chứa các đối tượng (Object).
   - Trình duyệt (Browser): chương trình giao tiếp người dùng của ứng dụng Web cho phép hiển thị trang Web.
   - HTTP sử dụng TCP làm giao thức ở tầng giao vận phía dưới.
   - HTTP client và HTTP server đều truy cập tới TCP thông qua socket. TCP chịu trách nhiệm về việc chuyển và tránh mất mát dữ liệu.
 
 ### 2.2. Kết nối liên tục và không liên tục (persistent / nonpersistent)
 HTTP 1.0 sử dụng kết nối không liên tục. HTTP 1.1 là kết nối liên tục
+
 **Kết nối không liên tục:** Sau khi gửi một đối tượng thì server sẽ đóng kết nối TCP lại. Nếu có nhiều yêu cầu thì sẽ cần phải có nhiều kết nối TCP được thiết lập
 - Khi kết nối được tạo ra thì cần phải có vùng đệm TCP (buffer) cũng như lưu giữ các biến TCP cả phía client và server. Tạo gánh nặng cho server khi có qua nhiều yêu cầu 1 lúc.
+
 **Kết nối liên tục:** Client gửi yêu cầu liên tiếp thì server sẽ trả lại các đối tượng nối tiếp nhau trên 1 kết nối TCP. Chỉ đóng khi không sử dụng trong 1 khoảng thời gian nhất định.
 
 ### 2.3. Khuôn dạng thông điệp HTTP
 > Thông điệp yêu cầu và thông điệp trả lời
+
 **Thông điệp yêu cầu HTTP (HTTP request message)** 
 - Chứa yêu cầu và phương thức yêu cầu, phiên bản của giao thức HTTP
 - Chứa tên tên host. Đang sử dụng kết nối liên tục hay không liên tục
@@ -60,6 +66,7 @@ HTTP 1.0 sử dụng kết nối không liên tục. HTTP 1.1 là kết nối li
 
 ### 2.4. Tương tác giữa người dùng và Hrver-server
 > HTTP có 2 cơ chế để server phân biệt người dùng: Authentication và cookies
+
 **Authentication (Kiểm chứng)**
 - Người dùng cung cấp tên và mật khẩu để có thể xác minh thân phận với phía server để có thể lấy được dữ liệu yêu cầu
 - HTTP phân biệt người dùng khác lỏng lẻo và không khó để vượt qua
