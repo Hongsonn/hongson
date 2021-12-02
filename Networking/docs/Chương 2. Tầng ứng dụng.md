@@ -96,3 +96,25 @@ Lưu trữ các đối tượng đã từng được lấy, Web cache làm giả
 
 ### 2.7. Web động
 
+- Web tĩnh - là 1 file HTML cụ thể nằm trên Web server
+- Web động - không tồn tại 1 file cố định trên Web server. Được server tạo ra khi nhận được yêu cầu cụ thể từ trình duyệt Web. Web server dùng 1 chương trình ứng dụng nào đó để tạo ra nội dung 1 văn bản sau đó trả về cho trình duyệt
+- Web tích cực (Active Web) là loại văn bản có chưa chương trình. Chương trình có khả năng tính toán và hiển thị thông tin
+ 
+> Web tĩnh
+
+- Ưu điểm: tính đơn giản, tiện lợi, tịn cậy
+- Nhược điểm : Thiếu tính linh hoạt
+
+>Web động
+
+- Ưu điểm: khả năng hiển thị ngay lập tức thông tin hiện thời từ phía server
+- Nhược điểm: chi phí cài đặt tương đối cao và không linh hoạt khi phải hiển thị những thông tin hay thay đổi
+
+> Web động
+
+- Ưu điểm: Khả năng cập nhật thông tin liên tục do có khả năng tương tác trực tiếp với server để cập nhật thông tin.
+- Nhược điểm: Chi phí xây dựng và khả năng an ninh của hệ thống khi phải tải và thực thi một chương trình từ server.
+
+
+
+
