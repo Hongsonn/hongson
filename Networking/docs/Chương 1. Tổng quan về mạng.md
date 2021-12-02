@@ -10,4 +10,6 @@
   - Khả năng liên tác (interoperability)
   - An ninh (security)
   - Chuẩn (Standard)
-### Mạng máy tính
+### 1.2. Mạng máy tính
+- Là tập hợp các máy tính và các thiết bị phụ trợ sử dụng chung 1 nhóm giao thức để chia sẻ tài nguyên thông qua các phương tiện truyền thông mạng
+- Các thành phần mạng: thiết bị, nút, máy tính
