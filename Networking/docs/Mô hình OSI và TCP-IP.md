@@ -21,5 +21,7 @@
 ### 2. Mô hình:
 - Gồm có 5 tầng: Vật lý, liên kết dữ liệu, mạng (IP), giao vận (TCP, UDP) và ứng dụng.
 
+![tcp/ip](https://adminvietnam.org/wp-content/uploads/2016/08/Capture1.png)
+
 
 
