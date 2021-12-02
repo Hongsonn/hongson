@@ -70,7 +70,22 @@ HTTP 1.0 sử dụng kết nối không liên tục. HTTP 1.1 là kết nối li
 - Được sử dụng để ghi nhớ các hoạt động người dùng
 
 ### 2.5. GET có điều kiện (Conditional GET)
+Lưu trữ các đối tượng đã từng được lấy, Web cache làm giảm thời gian chờ từ khi gửi yêu cầu đến khi nhận đối tượng và làm giảm lưu lượng thông tin truyền trên Internet
+- Một thông điệp HTTP được gọi là có điều kiện:
+  - Thông điệp sử dụng phương thức GET
+  - Thông điệp có trường If-modified-since trong tiêu đề
 
+### 2.6. Web cache
+**Web cache (proxy server)** là thực thể đáp ứng yêu cầu từ client. Máy tính làm nhiệm vụ Web cache có ổ đĩa riêng lưu trữ bản sao các đối tượng đã từng được yêu cầu
+- Vừa là client vừa là server
+- Được sử dụng rộng rãi: 
+  - Giảm thười gian client phải đợi
+  - Giảm tải mạng
+  - Mạng Internet với nhiều Webcache giúp cho việc nhanh chóng phát tán thông tin.
 
+**Cache liên hợp (Cooperative caching)** là sự kết hợp nhiều Webcache đặt ở các vị trí khác nhau trên mạng nhằm nâng cao hiệu suốt tổng thể.
+- Sử dụng các giao thức HTTP, ICP (Internet Caching Protocol)
+- Để giải quyết được vấn đề yêu cầu được gửi đến cache nào trong cụm cache, bằng cách sử dụng hàm băm (hash routing). Tìm kiếm theo hàm băm là cốt lõi của giao thức Cache Array Routing (CARP)
 
+### 2.7. Web động
 
