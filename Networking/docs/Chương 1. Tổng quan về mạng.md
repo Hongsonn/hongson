@@ -11,10 +11,10 @@
   - An ninh (security)
   - Chuẩn (Standard)
 ### 1.2. Mạng máy tính
-<<<<<<< HEAD
+
 - Là tập hợp các máy tính và các thiết bị phụ trợ sử dụng chung 1 nhóm giao thức để chia sẻ tài nguyên thông qua các phương tiện truyền thông mạng
 - Các thành phần mạng: thiết bị, nút, máy tính
-=======
+
 - Các thành phần mạng: thiết bị, nút, máy tính
 - Phương tiện và các giao thức truyền thông mạng có 2 tiêu chí:
   - Khả năng liên kết (connectivity): đường truyền và kết nối vật lý
