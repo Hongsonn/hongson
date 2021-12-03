@@ -105,7 +105,7 @@ Hệ thống mail trên Internet gồm 3 thành phần chính: user agent, mail 
   - Cờ mong muốn đệ quy (recursive-desired query) được đặt khi client (máy tính hay name server ) mong muốn name server thực hiện truy vấn đệ quy khi nó không có bản ghi đó.
   - Cờ chấp nhận đệ quy (recursion-available flag) được đặt trong thông điệp trả lời nếu name server đó hỗ trợ đệ quy.
 - Trong phần tiêu đề cũng có 4 trường số lượng, các trường này xác định số lượng các bản ghi trong 4 phần dữ liệu sau phần tiêu đề
-  - Phần câu hỏi (Question session) chứa thông tin về câu hỏi được tạo ra. Nó bao gồm (1) trường tên chứa tên đang được hỏi và (2) trường kiểu xác định kiểu câu hỏi.
+  - Phần câu hỏi (Question session) chứa thông tin về câu hỏi được tạo ra. Nó bao gồm 1 trường tên chứa tên đang được hỏi và 1 trường kiểu xác định kiểu câu hỏi.
   - Trong thông điệp trả lời từ server name, phần trả lời (answer section) chứa các bản ghi tài nguyên cho tên được yêu cầu trước đó. Chú ý rằng mỗi bản ghi tài nguyên có 4 trường: Type (A, NS, CNAME, MX,…), Name, Value, TTL. Thông điệp trả lời có thể có nhiều bản ghi tài nguyên vì tên máy tính có thể ứng với nhiều địa chỉ IP.
   - Mục thẩm quyền (authonty section) chứa các bản ghi của các authoritative server.
   - Mục phụ trợ (additional section) chứa các bản ghi "hữu ích" khác. Có thể là 1 bản ghi kiểu A cung cấp địa chỉ IP cho mail server
