@@ -33,8 +33,8 @@ Hệ thống mail trên Internet gồm 3 thành phần chính: user agent, mail 
 
 - Giống : Sử dụng kết nối liên tục 
 - Khác:
- - HTTP là giao thức kiểu kéo (Pull protocol) - client "kéo" thông tin từ server về. Phía nhận (client) là phía thiết lập kết nối TCP
- - SMTP là giao thức theo kiểu đẩy (Push protocol) - client "đẩy" thông tin lên server. Phía gửi là phía thiết lập kết nối TCP trước.
+  - HTTP là giao thức kiểu kéo (Pull protocol) - client "kéo" thông tin từ server về. Phía nhận (client) là phía thiết lập kết nối TCP
+  - SMTP là giao thức theo kiểu đẩy (Push protocol) - client "đẩy" thông tin lên server. Phía gửi là phía thiết lập kết nối TCP trước.
 
  ## 2.3. Giao thức truy nhập mail
  > Giao thức POP3 và IMAP
