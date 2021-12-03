@@ -49,9 +49,11 @@ Hệ thống mail trên Internet gồm 3 thành phần chính: user agent, mail 
 - Phiên làm việc IMAP gồm 3 giai đoạn: thiết lập kết nối giữa client và IMAP server, giai đoạn server chấp nhận kết nối, giai đoạn tương tác giữa client và server
 
 # III. Dịch vụ tên miền - DNS
-### 2.1. Các dịch vụ của DNS
+
+### 3.1. Các dịch vụ của DNS
+
 **Khái niệm DNS:**
-- Cơ sở dữ liệu phân tán được đặt trên một hệ thống phân cấp các máy phục vụ trên (nameserver)
+- Cơ sở dữ liệu phân tán được đặt trên một hệ thống phân cấp các máy phục vụ trên (name server)
 - Giao thức thuộc tầng ứng dụng cho phép máy tính và máy chủ tên trao đổi thông tin phục vụ mục đích xác định địa chỉ IP.
 
 - DNS cung cấp một số dịch vụ quan trọng sau:
@@ -59,19 +61,23 @@ Hệ thống mail trên Internet gồm 3 thành phần chính: user agent, mail 
   - Dịch vụ đặt bí danh cho mail server (Mail server aliasing)
   - Phân tán tải (load distribution)
 
-### 2.2. Cơ chế hoạt động của DNS
+### 3.2. Cơ chế hoạt động của DNS
 
 - Client gửi thông điệp truy vấn DNS chứa tên máy cần xác định địa chỉ IP.
 - Sau khoảng thời gian rất ngắn, client sẽ nhận được thông điệp của DNS chứa IP cần xác định
-- Để triển khai được dịch vụ xác định IP, cần nhiều máy chủ tên (nameserver) đặt khắp nơi trên thế giới và 1 giao thức ở tầng ứng dụng xác định cách thức trao đổi thông tin giữa các nameserver và giữa các nameserver với máy tính.
+- Để triển khai được dịch vụ xác định IP, cần nhiều máy chủ tên (name server) đặt khắp nơi trên thế giới và 1 giao thức ở tầng ứng dụng xác định cách thức trao đổi thông tin giữa các name server và giữa các name server với máy tính.
 
 **Triển khai DNS** có thể sử dụng 1 kiến trúc đơn giản 1 name server chứa tất cả các ánh xạ và địa chỉ IP. Nhưng gặp 1 số vấn đề: 
-- Điểm hỏng duy nhất (A single point of failure): nameserver ngừng hoạt động toàn bộ internet ngừng hoạt động 
-- Khối lượng công việc (Traffic volume): 1 nameserver duy nhất phải xử lý tất cả các truy vấn DNS
-- Cơ sở dữ liệu tập trung ở xa ( distant centralized database): Nameserver duy nhất không thể gần tất cả các client 
+- Điểm hỏng duy nhất (A single point of failure): name server ngừng hoạt động toàn bộ internet ngừng hoạt động 
+- Khối lượng công việc (Traffic volume): 1 name server duy nhất phải xử lý tất cả các truy vấn DNS
+- Cơ sở dữ liệu tập trung ở xa ( distant centralized database): Name server duy nhất không thể gần tất cả các client 
 - Bảo trì (maintenance): cở sở dữ liệu lớn, phải cập nhật thường xuyên
 
-**Giải quyết vấn đề trên:** DNS được thiết kế phân tán, sử dụng nhiều nameserver tổ chức phân cấp và phân tán trên toàn cầu.
->Có 3 loại nameserver: Local nameserver, root nameserver, authoritative nameserver
+**Giải quyết vấn đề trên:** DNS được thiết kế phân tán, sử dụng nhiều name server tổ chức phân cấp và phân tán trên toàn cầu.
+>Có 3 loại name server: Local name server, root name server, authoritative name server
 
-- Local nameserver: 
+- Local name server: Có thể là các trường học, tổ chức 
+- Root name server: Trên internet có 13 root name server, nếu local name server không thể trả loài truy vấn, thì local name server đóng vai trò client DNS gửi tới root name server để có được câu trả lời
+- Authoriative name server: là một name server luôn lưu trữ bản ghi DNS cho phép xác định địa chỉ IP của máy tính đó từ tên.
+
+### 3.3. Bản ghi DNS
