@@ -19,6 +19,7 @@ Internet cung cấp hai giao thức giao vận cho tầng ứng dụng: UDP và 
 - Dịch vụ giao vận tin cậy:
   - Đảm bảo truyền tất cả dữ liệu một cách chính xác
   - Không đảm bảo về tốc độ truyền và độ trễ.
+  
 **Giao thức UDP:** với mô hình phục vụ tối thiểu
 - Không hướng nối, không cung cấp dịch vụ truyền tin cậy
 - Không đảm bảo thông điệp sẽ đến được cổng tiến trình nhận. 
