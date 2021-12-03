@@ -1,5 +1,5 @@
 # Mô hình OSI và mô hình TCP/IP
-> Mô hình OSI (International Standards Organization)
+> Mô hình OSI (Open Systems Interconnection )
 ### 1. Khái niệm:
 - Là mô hình liên kết giữa các hệ thống mở
 - Cho phép các hệ thống khác nhau có thể truyền thông với nhau mà không cần quan tâm tới kiến trúc bên dưới chúng.
