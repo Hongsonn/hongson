@@ -88,3 +88,24 @@ Hệ thống mail trên Internet gồm 3 thành phần chính: user agent, mail 
 - AAAA Record: cùng là A Record, tuy nhiên, AAA Record được sử dụng để trỏ domain đến 1 ipv6 address
 - NS Record: DNS Server Records của tên miền, cho phép chỉ định Name Server cho từng tên miền phụ.
 - SRV Record: là bản ghi đặc biệt trong Domain Name System, dùng để xác định port nào chạy dịch vụ nào
+
+
+### 3.4. Thông điệp DNS
+
+> Gồm có thông điệp yêu cầu và thông điệp trả lời
+
+![DNS](https://whitehat.vn/image/xenforo_image/1489939941hinh%207%20khuon%20dang%20ban%20tin%20dns.JPG)
+
+Ý nghĩa các trường trong thông điệp: 
+- 12 byte đầu tiên là phần tiêu đề. Phần tiêu đề có 1 số trường:
+  - Trường đầu tiên là định danh 16 bit cho mỗi thông điệp yêu cầu, được ghi lại vào thông điệp trả lời, cho phép client xác định được đấy là câu trả lời nào cho yêu cầu nào.
+  - Có nhiều trường cờ, mỗi cờ ứng với 1 bit.
+  - Cờ truy vấn (query/reply flag) xác định thông điệp là yêu cầu (0) hay là trả lời (1)
+  - Cờ authoritiative được đặt trong thông điệp trả lời khi name server 1à authoriative name server của tên máy tính cần xác định địa chỉ IP
+  - Cờ mong muốn đệ quy (recursive-desired query) được đặt khi client (máy tính hay name server ) mong muốn name server thực hiện truy vấn đệ quy khi nó không có bản ghi đó.
+  - Cờ chấp nhận đệ quy (recursion-available flag) được đặt trong thông điệp trả lời nếu name server đó hỗ trợ đệ quy.
+- Trong phần tiêu đề cũng có 4 trường số lượng, các trường này xác định số lượng các bản ghi trong 4 phần dữ liệu sau phần tiêu đề
+  - Phần câu hỏi (Question session) chứa thông tin về câu hỏi được tạo ra. Nó bao gồm (1) trường tên chứa tên đang được hỏi và (2) trường kiểu xác định kiểu câu hỏi.
+  - Trong thông điệp trả lời từ server name, phần trả lời (answer section) chứa các bản ghi tài nguyên cho tên được yêu cầu trước đó. Chú ý rằng mỗi bản ghi tài nguyên có 4 trường: Type (A, NS, CNAME, MX,…), Name, Value, TTL. Thông điệp trả lời có thể có nhiều bản ghi tài nguyên vì tên máy tính có thể ứng với nhiều địa chỉ IP.
+  - Mục thẩm quyền (authonty section) chứa các bản ghi của các authoritative server.
+  - Mục phụ trợ (additional section) chứa các bản ghi "hữu ích" khác. Có thể là 1 bản ghi kiểu A cung cấp địa chỉ IP cho mail server
