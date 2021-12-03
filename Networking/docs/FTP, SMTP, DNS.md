@@ -48,11 +48,11 @@ Hệ thống mail trên Internet gồm 3 thành phần chính: user agent, mail 
 - Được thiết kế cho phép người dùng thao tác trên những hộp thư ở xa một cách dễ dàng
 - Phiên làm việc IMAP gồm 3 giai đoạn: thiết lập kết nối giữa client và IMAP server, giai đoạn server chấp nhận kết nối, giai đoạn tương tác giữa client và server
 
-# II. Dịch vụ tên miền - DNS
+# III. Dịch vụ tên miền - DNS
 ### 2.1. Các dịch vụ của DNS
-> DNS:
-    - Cơ sở dữ liệu phân tán được đặt trên một hệ thống phân cấp các máy phục vụ trên (nameserver)
-    - Giao thức thuộc tầng ứng dụng cho phép máy tính và máy chủ tên trao đổi thông tin phục vụ mục đích xác định địa chỉ IP.
+**Khái niệm DNS:**
+- Cơ sở dữ liệu phân tán được đặt trên một hệ thống phân cấp các máy phục vụ trên (nameserver)
+- Giao thức thuộc tầng ứng dụng cho phép máy tính và máy chủ tên trao đổi thông tin phục vụ mục đích xác định địa chỉ IP.
 
 - DNS cung cấp một số dịch vụ quan trọng sau:
   - Dịch vụ đặt bí danh cho máy tính (Host aliasing)
