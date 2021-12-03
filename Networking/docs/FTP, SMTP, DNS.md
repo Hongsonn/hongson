@@ -84,7 +84,7 @@ Hệ thống mail trên Internet gồm 3 thành phần chính: user agent, mail 
 
 - A record: trỏ tên website tới 1 ip cụ thể
 - CNAME Record: đóng vai trò như đặt một hoặc nhiều tên khác cho tên chính, có thể tạo tên mới, điều chỉnh con trỏ tới tên gốc và đặt TTL.
-- MX Record: chỉ định Sv nào quản lý các dịch vụ email của tên miền đó.
+- MX Record: chỉ định server nào quản lý các dịch vụ email của tên miền đó.
 - AAAA Record: cùng là A Record, tuy nhiên, AAA Record được sử dụng để trỏ domain đến 1 ipv6 address
 - NS Record: DNS Server Records của tên miền, cho phép chỉ định Name Server cho từng tên miền phụ.
 - SRV Record: là bản ghi đặc biệt trong Domain Name System, dùng để xác định port nào chạy dịch vụ nào
