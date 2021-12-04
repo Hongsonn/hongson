@@ -25,7 +25,7 @@
 
 ![on](https://scontent.xx.fbcdn.net/v/t1.15752-9/p160x160/261775585_210632004558657_949438169378481780_n.png?_nc_cat=102&ccb=1-5&_nc_sid=aee45a&_nc_ohc=F02gr32J_dsAX8cr5TS&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=22774a5c88b0550e6e4044f330c874be&oe=61D05F66)
 
-- Bước 7: Tiến hành kết nối với switch vào server, để server có thể kết nối với mạng bên ngoài.
+- Bước 7: Tiến hành kết nối với switch với server, để server có thể kết nối với mạng bên ngoài.
 
 ![Switch](https://scontent.xx.fbcdn.net/v/t1.15752-9/s261x260/263173372_878336462880596_3752581078600330340_n.png?_nc_cat=103&ccb=1-5&_nc_sid=aee45a&_nc_ohc=Dp1IRCn2BKYAX_M5S3K&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=f11988b5ec90f532ec9b2078e8183a6c&oe=61CED9DF)
 
