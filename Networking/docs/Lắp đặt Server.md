@@ -1,7 +1,7 @@
 # Lắp đặt Server trên DC 
 ### 1. Chuẩn bị:
 - Hai server đã cài đặt OS (Operating System)
-- Hai thanh đỡ server
+- Thanh đỡ server
 - Các dụng cụ lắp đặt (tô-vít, dây cáp mạng,...)
 ### 2. Quy trình thực hiện
 - Bước 1: Kiểm tra vị trí lắp đặt server trong tủ rack có đúng hay chưa.
