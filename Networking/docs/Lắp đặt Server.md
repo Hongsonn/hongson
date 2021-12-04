@@ -6,7 +6,7 @@
 ### 2. Quy trình thực hiện
 - Bước 1: Kiểm tra vị trí lắp đặt server trong tủ rack có đúng hay chưa.
 
-![rack](https://f9.photo.talk.zdn.vn/8131747442216852330/3da629717490bfcee681.jpg)
+![rack](https://scontent.xx.fbcdn.net/v/t1.15752-9/s206x206/260775650_331713915055556_3091377182255297873_n.png?_nc_cat=108&ccb=1-5&_nc_sid=aee45a&_nc_ohc=Z2RochllVwcAX96xNBp&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=c52cce6894be436fb966190dd4aac6a6&oe=61D232CF)
 
 - Bước 2: Lắp đặt server vào các vị trí đã bố trí trước. 
 
@@ -35,7 +35,7 @@
 
 - Bước 9: Sau khi quá trình kiểm tra hoàn tất, tiến hành gắn thẻ chứa các thông tin cho server(Đơn vị cung cấp, số hiệu, địa chỉ IP) và hoàn tất cài đặt.
 
-![tag](https://b.f8.photo.talk.zdn.vn/5850052657113652454/18a040d36734ac6af525.jpg)
+![tag](https://scontent.xx.fbcdn.net/v/t1.15752-9/s280x280/260284638_472077410924874_8498075560285794258_n.png?_nc_cat=100&ccb=1-5&_nc_sid=aee45a&_nc_ohc=t64ZrPQn7PAAX9uMYbh&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=6ab44f32ea0491ef81a13fb09db85aea&oe=61D121CD)
 # Note. 
 - Khu vực lắp đặt các server của công ty tại các DC:
  - Tại tầng 1 có DC 3 lắp đắt server của công ty lắp đặt các dịch vụ
@@ -43,7 +43,8 @@
 - Nơi server có nhiệt độ phù hợp để giúp server vận hành tốt hơn.
 - Khi tiến hành chọn vị trí lắp đặt server thì nên chọn 3u liền kề đối với 3 server, mỗi server chiếm 1u (tùy vào kích thước của server) trong tủ rack.
 - Khi kết nối switch với server, kết nối đúng dây, tránh nhầm lẫn, mỗi dây đều có đánh số
-![number](https://b-f14-zpc.zdn.vn/4826533333189222416/6c9fbbf89c1f57410e0e.jpg)
+
+![number](https://scontent.xx.fbcdn.net/v/t1.15752-9/s240x240/263373635_228258069310208_5911261665030054935_n.png?_nc_cat=105&ccb=1-5&_nc_sid=aee45a&_nc_ohc=wTfRo64D1XcAX_O2RuM&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=58aea19170f677dd615a4242025c7a09&oe=61D0661B)
 
 - Tong dịch vụ lắp đặt server được chia ra làm 2: 
   - Nội bộ
