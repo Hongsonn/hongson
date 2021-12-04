@@ -1,5 +1,5 @@
 # Lắp đặt Server trên DC 
-### 1.Chuẩn bị:
+### 1. Chuẩn bị:
 - Hai server đã cài đặt OS (Operating System)
 - Hai thanh đỡ server
 - Các dụng cụ lắp đặt (tô-vít, dây cáp mạng,...)
@@ -39,9 +39,9 @@
 
 # Note
 - Khu vực lắp đặt các server của công ty tại các DC:
- - Tại tầng 1 có DC 3 lắp đắt server của công ty lắp đặt các dịch vụ
- - Tại tầng 2 có DC 1 và DC 2
-- Nơi server có nhiệt độ phù hợp để giúp server vận hành tốt hơn.
+  - Tại tầng 1 có DC 3 lắp đắt server của công ty lắp đặt các dịch vụ
+  - Tại tầng 2 có DC 1 và DC 2
+- Nơi đặt server có nhiệt độ phù hợp để giúp server vận hành tốt hơn.
 - Khi tiến hành chọn vị trí lắp đặt server thì nên chọn 3u liền kề đối với 3 server, mỗi server chiếm 1u (tùy vào kích thước của server) trong tủ rack.
 
 ![u](https://scontent.fhan5-3.fna.fbcdn.net/v/t1.15752-9/261322180_1063667884417423_902790606466197845_n.png?_nc_cat=106&ccb=1-5&_nc_sid=ae9488&_nc_ohc=K2ZvU5pDdHUAX_qTurH&_nc_ht=scontent.fhan5-3.fna&oh=83bcb3392a6ac94c93f6a9ec0cdfa575&oe=61CFA225)
@@ -53,3 +53,5 @@
 - Trong dịch vụ lắp đặt server được chia ra làm 2: 
   - Nội bộ
   - Khách hàng
+
+
