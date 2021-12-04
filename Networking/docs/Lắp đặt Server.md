@@ -36,16 +36,20 @@
 - Bước 9: Sau khi quá trình kiểm tra hoàn tất, tiến hành gắn thẻ chứa các thông tin cho server(Đơn vị cung cấp, số hiệu, địa chỉ IP) và hoàn tất cài đặt.
 
 ![tag](https://scontent.xx.fbcdn.net/v/t1.15752-9/s280x280/260284638_472077410924874_8498075560285794258_n.png?_nc_cat=100&ccb=1-5&_nc_sid=aee45a&_nc_ohc=t64ZrPQn7PAAX9uMYbh&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=6ab44f32ea0491ef81a13fb09db85aea&oe=61D121CD)
-# Note. 
+
+# Note
 - Khu vực lắp đặt các server của công ty tại các DC:
  - Tại tầng 1 có DC 3 lắp đắt server của công ty lắp đặt các dịch vụ
  - Tại tầng 2 có DC 1 và DC 2
 - Nơi server có nhiệt độ phù hợp để giúp server vận hành tốt hơn.
 - Khi tiến hành chọn vị trí lắp đặt server thì nên chọn 3u liền kề đối với 3 server, mỗi server chiếm 1u (tùy vào kích thước của server) trong tủ rack.
+
+![u](https://scontent.fhan5-3.fna.fbcdn.net/v/t1.15752-9/261322180_1063667884417423_902790606466197845_n.png?_nc_cat=106&ccb=1-5&_nc_sid=ae9488&_nc_ohc=K2ZvU5pDdHUAX_qTurH&_nc_ht=scontent.fhan5-3.fna&oh=83bcb3392a6ac94c93f6a9ec0cdfa575&oe=61CFA225)
+
 - Khi kết nối switch với server, kết nối đúng dây, tránh nhầm lẫn, mỗi dây đều có đánh số
 
 ![number](https://scontent.xx.fbcdn.net/v/t1.15752-9/s240x240/263373635_228258069310208_5911261665030054935_n.png?_nc_cat=105&ccb=1-5&_nc_sid=aee45a&_nc_ohc=wTfRo64D1XcAX_O2RuM&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=58aea19170f677dd615a4242025c7a09&oe=61D0661B)
 
-- Tong dịch vụ lắp đặt server được chia ra làm 2: 
+- Trong dịch vụ lắp đặt server được chia ra làm 2: 
   - Nội bộ
   - Khách hàng
