@@ -4,11 +4,11 @@
 - Thanh đỡ server
 - Các dụng cụ lắp đặt (tô-vít, dây cáp mạng,...)
 ### 2. Quy trình thực hiện
-- Bước 1: Kiểm tra vị trí lắp đặt server trong tủ rack có đúng hay chưa.
+- Bước 1: Kiểm tra vị trí lắp đặt server có đúng hay chưa.
 
 ![rack](https://scontent.xx.fbcdn.net/v/t1.15752-9/s206x206/260775650_331713915055556_3091377182255297873_n.png?_nc_cat=108&ccb=1-5&_nc_sid=aee45a&_nc_ohc=Z2RochllVwcAX96xNBp&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=c52cce6894be436fb966190dd4aac6a6&oe=61D232CF)
 
-- Bước 2: Lắp đặt server vào các vị trí đã bố trí trước. 
+- Bước 2: Lắp đặt server vào tủ rack, vị trí đã bố trí trước. 
 
 ![u9](https://scontent.xx.fbcdn.net/v/t1.15752-9/s280x280/262062024_612843739759962_8003450223099691131_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=aee45a&_nc_ohc=ucQP6FxXXQMAX_tZ5C0&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=1081027eb41685b2636eb36a2221afa1&oe=61D19A34)
 
