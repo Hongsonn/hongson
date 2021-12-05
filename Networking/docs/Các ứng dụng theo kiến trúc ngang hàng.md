@@ -52,5 +52,33 @@
 **Khôn dạng thông điệp của giao thức Gnutella** được chia thành 5 kiểu: Ping, Pong, Query, Queryhit, Push
 - Ping: phát hiện các nút trên mạng. Mỗi nút nhận được thông điệp Ping có thể trả lời bằng một hoặc nhiều thông điệp Pong
 - Pong: thông điệp trả lời cho Ping, chứa địa chỉ và các thông tin của nút
-- Query: 
+- Query: là thông điệp phục vụ mục đích tìm kiếm trên mạng. Nếu nhận được truy vấn mà có dữ liệu đáp ứng được, nút gửi thông điệp QueryHit trả lời
+- QueryHit: thông điệp trả lời Query. Cung cấp các thông tin cần thiết để phía tìm kiếm có thể tải file
+- Push: Được các nút đằng sau firewall sử dụng khi muốn chuyển dữ liệu cho nút khác
+
+**Các thông tin tiêu đề** 
+
+![Gnutella](https://scontent.xx.fbcdn.net/v/t1.15752-9/s526x296/263534065_618067522676474_3179152101739293602_n.png?_nc_cat=110&ccb=1-5&_nc_sid=aee45a&_nc_ohc=iZdBwFef9VUAX_5KSpk&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=4d32a91f3a77a019c06e215c59f56447&oe=61D067E5)
+
+Hình minh hoạ tiêu đề gồm 5 trường của một thông điệp Gnutella tổng quát:
+- *Descriptor ID* (Định danh thông điệp) xác định duy nhất một thông điệp trên mạng
+- *Payload Descriptor* (Dữ liệu) Xác định thông điệp (0x00 cho Ping, 0x01 cho Pong, 0x40 cho Push, 0x80 cho Query, and 0x81 cho QueryHit).
+- *TTL* Số chặng mà thông điệp có thể lan toả trên mạng.
+- *Hops* Số chặng mà thông điệp đã đi qua (tổng của giá trị này với giá trị TTL là giá trị TTL khởi đầu) 
+- *Payload Length* Độ dài của trường dữ liệu
+
+**Mô tả trường dữ liệu**
+Có năm kiểu trường dữ liệu khác nhau (ứng với 5 kiểu thông điệp)
+
+1. Ping: Thông điệp Ping không có dữ liệu 
+2. Pong: 
+![pong](https://scontent.xx.fbcdn.net/v/t1.15752-9/263498018_433687718287711_5136551088334946907_n.png?_nc_cat=111&ccb=1-5&_nc_sid=aee45a&_nc_ohc=t67FFg0KN80AX-v3L7a&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=7689356244221bf3033c4951c6d7c6b1&oe=61D28DED)
+
+Dữ liệu trong thông điệp Pong có bốn phần. Thông điệp Pong được gửi để trả lời thông điệp Ping.
+- *Port*: số hiệu cổng Host chấp nhận kết nối
+- *IP Address: địa chỉ IP của nút
+- *#Files Shared*: Số lượng file mà host chia sẻ
+- *#Kilobytes Shared*: Số lượng KB host đã chia sẻ
+
+3.Query
 
