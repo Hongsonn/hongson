@@ -103,3 +103,11 @@ Trả lời thông điệp Query.Thông điệp này được nút có thể đ�
 
 5. Push (0x40)
 
+![push](https://f56-zpg.zdn.vn/1531561167336631036/1608774a68bda3e3faac.jpg)
+
+Thông điệp Push được sử dụng bởi nút yêu cầu đề nghị nút có dữ liệu nhưng ở phía sau firewall khởi tạo kết nối trước.
+
+- *Servent Identifier*: chuỗi 16-byte xác định nút được đề nghị chuyển file có đường dẫn đặt ở File_Index. Định danh này phải giống với định danh trong thông điệp QueryHit tương ứng 
+- *File_Index*: xác định file được đề nghị gửi 
+- *Port*: Số hiệu cổng mà nút có thể chấp nhận các kết nối
+- *IP Address*: địa chỉ IP của nút tương ứng
