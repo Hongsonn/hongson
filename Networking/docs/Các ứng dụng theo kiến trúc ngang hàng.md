@@ -80,5 +80,26 @@ Dữ liệu trong thông điệp Pong có bốn phần. Thông điệp Pong đư
 - *#Files Shared*: Số lượng file mà host chia sẻ
 - *#Kilobytes Shared*: Số lượng KB host đã chia sẻ
 
-3.Query
+3. Query
+
+![Query](https://scontent.xx.fbcdn.net/v/t1.15752-9/263522521_428671608865748_3139056296870177572_n.png?_nc_cat=106&ccb=1-5&_nc_sid=aee45a&_nc_ohc=HXKYmwg7chgAX8sLLTt&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=8aedd77672c516a381611415cde97bbe&oe=61D1EF83)
+
+Là thông điệp truy vấn, gồm hai phần: Minimum Speed và Search Criteria
+- *Minimum Speed*: Tốc độ cực tiểu (đợn vị KB/s) mà nút có thể đáp ứng với thông điệp
+- *Search Criteria*: tiêu chí tìm kiếm, độ dài của trường của này bị giới hạn bởi giá trị trường Payload Length trong tiêu đề thông điệp
+
+4. Thông điệp QueryHit
+
+Trả lời thông điệp Query.Thông điệp này được nút có thể đáp ứng yêu cầu gửi cho nút có yêu cầu. Định danh thông điệp của Query tương ứng. 
+
+![queryhit](https://f51-zpg.zdn.vn/4967171403719407787/002da1d56e21a57ffc30.jpg)
+
+- *Number of Hits*: số lượng các câu trả lời trong Result Set
+- *Port*: Số hiệu cổng mà nút có thể chấp nhận các kết nối
+- *IP Address*: địa chỉ IP của nút tương ứng 
+- *Speed*: tốc độ (KB/s) của nút
+- *Result Set*: tập hợp các kết quả thoả mãn các câu truy vấn. Tập hợp này gồm các bản ghi liên tục nhau, mỗi bản ghi gồm tên file, kích thước file và đường dẫn đến file
+- *Servent Identifier*: là chuỗi 16-byte xác định nút duy nhất trên mạng. 
+
+5. Push (0x40)
 
