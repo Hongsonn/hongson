@@ -45,19 +45,19 @@
   - `tar`: Nén và giải nén các tập tin **.tar, .tar.gz**. Ví dụ: **tar - xvf filename.tar** và **tar - xvzf filename.tar.gz**
 
 - Xem thông tin hệ thống:
-  -`date`: In ngày giờ hệ thống
-  -`df -h`: In thông tin không gian đĩa được dùng
-  -`free`: In thông tin bộ nhớ được dùng
-  -`history`: Hiển thị các lệnh được thực hiện bởi tài khoản hiện tại
-  -`hostname`: In tên máy chủ cục bộ (host)
-  -`pwd`: In đường dẫn đến thư mục làm việc hiện hành
-  -`rwho -a`: Liệt kê tất cả các người dùng đã đăng nhập vào network
-  -`uptime`: in thời gian kể từ lần reboot gần nhất
-  -`who`: Liệt kê tất cả người dùng đã đăng nhập vào máy
-  -`whoami`: In tên người dùng hiện hành
+  - `date`: In ngày giờ hệ thống
+  - `df -h`: In thông tin không gian đĩa được dùng
+  - `free`: In thông tin bộ nhớ được dùng
+  - `history`: Hiển thị các lệnh được thực hiện bởi tài khoản hiện tại
+  - `hostname`: In tên máy chủ cục bộ (host)
+  - `pwd`: In đường dẫn đến thư mục làm việc hiện hành
+  - `rwho -a`: Liệt kê tất cả các người dùng đã đăng nhập vào network
+  - `uptime`: in thời gian kể từ lần reboot gần nhất
+  - `who`: Liệt kê tất cả người dùng đã đăng nhập vào máy
+  - `whoami`: In tên người dùng hiện hành
 
 - Các lệnh dùng theo dõi tiến trình: 
-  -`ps`: Liệt kê các tiến trình đang kích hoạt bởi người dùng và PID của các tiến trình đó.
-  -`ps -aux`: Liệt kê các tiến trình đang kích hoạt cùng với tên của người dùng là chủ tiến trình
-  -`top`: Hiển thị danh sách các tiến trình đang kích hoạt, danh sách này được cập nhật liên tục
+  - `ps`: Liệt kê các tiến trình đang kích hoạt bởi người dùng và PID của các tiến trình đó.
+  - `ps -aux`: Liệt kê các tiến trình đang kích hoạt cùng với tên của người dùng là chủ tiến trình
+  - `top`: Hiển thị danh sách các tiến trình đang kích hoạt, danh sách này được cập nhật liên tục
   
