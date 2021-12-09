@@ -24,3 +24,26 @@ Là chương trình máy chủ HTTP là một chương trình dành cho máy ch�
   - Có nhiều lựa chọn thiết lập có thể gây ra điểm yếu về bảo mật
 
 ### 5. Cài đặt Apache trên Centos7
+1. Cài đặt Apache:
+
+- Sử dụng lệnh để cập nhật những packages mới nhất: `sudo yum update`
+- Để cài đặt Apache, sử dụng : `sudo yum install httpd`
+- Khởi động Apache: `sudo systemctl start httpd`
+- Cài đặt để dịch vụ khởi động cùng hệ thống: `sudo systemctl enable httpd`
+- Truy cập vào trình duyệt web để kiểm tra xem việc cài đặt đã thành công chưa:
+![apache](https://f4-zpcloud.zdn.vn/5299107107252929036/21c2883049a382fddbb2.jpg)
+
+2. Cấu hình Firewall để cho phép truy cập Apache:
+- Lưu lượng truy cập web thông thường sử dụng giao thức http trên port 80, web mã hóa sử dụng giao thức https trên port 443
+- Thay đổi Firewall để cho phép kết nối các cổng này bằng lệnh:
+`firewall-cmd --permanent --add-port=80/tcp`
+`firewall-cmd --permanent --add-port=443/tcp`
+- Sau khi hoàn thành hãy reload firewall để áp dụng thay đổi các bước cài đặt: `firewall-cmd --reload`
+
+3. Các lệnh khác để quản lý Apache:
+- Ngừng dịch vụ Apache: `sudo systemctl stop httpd`
+- Ngăn chặn hoặc vô hiệu hóa Apache khi khởi động hệ thống: `sudo systemctl disable httpd`
+- Khởi động Apache cùng hệ thống: `sudo systemctl enable httpd`
+- Khởi động lại Apache và áp dụng bất kì thay đổi nào đã thực hiện: `sudo systemctl restart httpd`
+- Kiểm tra tình trạng Apache đang tắt hay đang chạy: `sudo systemctl status httpd`
+
