@@ -20,6 +20,7 @@
   - **-(Deny)** - được biểu diễn bằng số 0.
 
 - Cấu trúc của chỉ số phân quyền:
+
 Ví dụ:
 
 drwxr-xr-x.  2 son  son     6 Dec  8 11:06 Downloads
