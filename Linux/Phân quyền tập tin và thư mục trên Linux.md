@@ -23,6 +23,7 @@
 Ví dụ:
 
 drwxr-xr-x.  2 son  son     6 Dec  8 11:06 Downloads
+
 -rw-------.  1 son  son    16 Dec  8 11:06 .esd_auth
 
 | File type| Owner       | Group      | Other | Name      |
