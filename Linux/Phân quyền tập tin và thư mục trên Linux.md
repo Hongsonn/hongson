@@ -42,6 +42,7 @@ drwxr-xr-x.  2 son  son     6 Dec  8 11:06 Downloads
 Chỉ số phân quyền của file Downloads = 755
 
 - Để thay đổi các chỉ số phân quyền này ta sử dụng lệnh chmod:
+
 `# chmod <tùy chọn> <chỉ số phân quyền> <tên file/thư mục>`
 - Các tùy chọn: 
   - **-v**: Hiển thị báo cáo sau khi chạy lệnh, mỗi lần đổi quyền là hiển thị 1 lần
@@ -51,6 +52,7 @@ Chỉ số phân quyền của file Downloads = 755
 ### III. Thay đổi chủ sở hữu cho tập tin và thư mục
 
 Mọi tập tin và thư mục đề có user và group của riêng nó, nếu muốn thay đổi dùng lệnh chown:
+
 `# chown <tùy chọn> <tên user><tên group> <tên file/foder> `
 - Các tùy chọn: 
   - **-v**: Hiển thị báo cáo sau khi chạy lệnh, mỗi lần đổi quyền là hiển thị 1 lần
