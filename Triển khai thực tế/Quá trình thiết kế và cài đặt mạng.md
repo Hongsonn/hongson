@@ -9,14 +9,11 @@ Gồm có các giai đoạn:
 - Bảo trì mạng
 
 ### Thu thập yêu cầu của khách hàng
-- Mục đích của giai đoạn này là nhằm xác định mong muốn của khách hàng trên
-mạng mà chúng ta sắp xây dựng. Những câu hỏi cần được trả lời trong giai đoạn này là:
+- Mục đích của giai đoạn này là nhằm xác định mong muốn của khách hàng trên mạng mà chúng ta sắp xây dựng. Những câu hỏi cần được trả lời trong giai đoạn này là:
   - Bạn thiết lập mạng để làm gì? sử dụng nó cho mục đích gì?
   - Các máy tính nào sẽ được nối mạng?
-  - Những người nào sẽ được sử dụng mạng, mức độ khai thác sử dụng mạng
-của từng người / nhóm người ra sao?
-  - Trong vòng 3-5 năm tới bạn có nối thêm máy tính vào mạng không, nếu có
-ở đâu, số lượng bao nhiêu ?
+  - Những người nào sẽ được sử dụng mạng, mức độ khai thác sử dụng mạng của từng người / nhóm người ra sao?
+  - Trong vòng 3-5 năm tới bạn có nối thêm máy tính vào mạng không, nếu có ở đâu, số lượng bao nhiêu ?
 
 ### Phân tích yêu cầu
 
