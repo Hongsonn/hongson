@@ -89,6 +89,10 @@ Bye
 `yum -y install php-gd`
 - Tải xuống WordPress phiên bản mới nhất: Nếu chưa cài đặt `wget` thì có thể cài bằng câu lệnh `# yum install wget`.
 
+```
+[root@localhost ~]# wget https://wordpress.org/latest.tar.gz
+```
+
 ![WP](https://f4-zpcloud.zdn.vn/1380808355234491015/d8fd64290f20c57e9c31.jpg)
 
 ![WP](https://f5-zpcloud.zdn.vn/4616831341997928102/743e8408e4012e5f7710.jpg)
@@ -106,3 +110,32 @@ Bye
 ![tar](https://f4-zpcloud.zdn.vn/8022382629050195955/e59be44152489816c159.jpg)
 
 - Copy các file trong thư mục WordPress tới đường dẫn `/var/www/html`
+
+`cp -Rvf /root/wordpress/* /var/www/html`
+
+4. **Cấu hình WordPress**
+- File cấu hình wordpress là `wp-config.php`. Tuy nhiên tại đây chỉ có file `wp-config-sample.php`. Tiến hành copy lại file cấu hình như sau:
+
+![cp](https://f5-zpcloud.zdn.vn/2114671109012266233/db73b1f71ffcd5a28ced.jpg)
+
+- Mở file `wp-config.php` chỉnh sửa bằng `vi`:
+
+![vi](https://f4-zpcloud.zdn.vn/621530692100249154/48b870efc3e409ba50f5.jpg)
+
+Chỉnh lại tên database, username, password đã đặt trước đó. (db_name: dbwptest, username: admin, pass: admin) và lưu lại.
+
+5. Hoàn tất cài đặt giao diện
+- Kiểm tra trên trình duyệt:
+
+![gd](https://f5-zpcloud.zdn.vn/7114899393313751206/64134d9a929158cf0180.jpg)
+ 
+- Nhập các thông tin cần thiết rồi Install WordPress.
+
+![wp](https://f5-zpcloud.zdn.vn/7559145298254099791/4b2bf141094ac3149a5b.jpg)
+
+- Tiến hành đăng nhập và vào giao diện WP:
+
+![wp](https://f4-zpcloud.zdn.vn/2737500009353918834/f29c0c17fd1c37426e0d.jpg)
+
+
+
