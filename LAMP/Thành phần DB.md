@@ -21,4 +21,18 @@
 Tập hợp các thuộc tính độc lập với nhau. với mục đích là liên kết giữa các bảng với nhau:
 - **Primary key**: là khóa chính, chỉ tồn tại duy nhất, k nhận giá trị null
 - **Foreign key**: khóa phụ là 1 hay nhiều trường dữ liệu được thiết lập để liên kết giữa các bảng với nhau
- 
+
+3. User Defined Function
+Hàm do người dùng định nghĩa
+4. Users
+Chứa danh sách User sử dụng CSDL. Người quản trị hệ thống cao nhất có User Name là dbo, tên đăng nhập (Login Name) hệ thống mặc định là sa. Tài khoản sa luôn tồn tại và không thể bỏ đi. 
+5. Roles
+Các quy định vai trò và chức năng của User trong hệ thống SQL Server
+6. Rules
+Các quy tắc ràng buộc dữ liệu được lưu trữ trên table
+7. Default
+Các khai báo giá trị mặc định
+8. User Defined Data Type
+Kiểu dữ liệu do người dùng tự định nghĩa
+9. Full Text Catalogs
+Tập phân loại dữ liệu Text
