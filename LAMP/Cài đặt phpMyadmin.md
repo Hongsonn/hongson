@@ -8,7 +8,7 @@
 - Chỉnh sửa :`vi /etc/httpd/conf.d/phpMyAdmin.conf` để kiểm soát truy cập
 
 ![a](https://f5-zpcloud.zdn.vn/731417932279303498/7b40fdf0bfe375bd2cf2.jpg)
-- khởi động lại dịch vụ:
+- khởi động lại dịch vụ: systemctl restart httpd
 - Truy cập phpmyadmin:
 
 ![qa](https://f5-zpcloud.zdn.vn/216731985416609855/39def0be8dad47f31ebc.jpg)
