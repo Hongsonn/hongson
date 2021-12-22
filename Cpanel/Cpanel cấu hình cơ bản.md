@@ -40,7 +40,7 @@
 - Ở đây sử dụng MySQL Database Wizard để đơn giản quá trình tạo DB 
   - b1. Nhập teen DB
   - b2. Nhập user và mật khẩu
-  - b3. Chọn ALL PRIVILEGES để cho phép tất cả cá quyền
+  - b3. Chọn ALL PRIVILEGES để cho phép tất cả các quyền
   - b4. Hoàn tất quá trình khởi tạo
 
 4. Đăng nhập và cấu hình website
