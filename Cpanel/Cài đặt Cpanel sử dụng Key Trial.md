@@ -40,7 +40,7 @@ IP public để lấy license và tự động active
 
   - Ipv6
 
-  ![a](https://f5-zpcloud.zdn.vn/7223308854788104904/bdb6fca39f8755d90c96.jpg)
+   ![a](https://f5-zpcloud.zdn.vn/7223308854788104904/bdb6fca39f8755d90c96.jpg)
 
   - NTPD: (Network Time Protocol daemon)
      - Chrony là một dịch vụ hỗ trợ một cách đầy đủ, thuận tiện việc quản lý đồng bộ thời gian trên Network Time Protocol.
@@ -71,7 +71,7 @@ IP public để lấy license và tự động active
   ![a](https://f4-zpcloud.zdn.vn/1160592464219597822/86dd71c3b1e77bb922f6.jpg)
 
   - Điền email và name server:
-  
+
   ![a](https://f5-zpcloud.zdn.vn/2363732533336320641/58a1f7570473ce2d9762.jpg)
 
 
