@@ -137,5 +137,9 @@ Chỉnh lại tên database, username, password đã đặt trước đó. (db_n
 
 ![wp](https://f4-zpcloud.zdn.vn/2737500009353918834/f29c0c17fd1c37426e0d.jpg)
 
+- Cần phân quyền thư mục wordpress cho user apache để user này được phép tạo các thư mục và lưu trữ các tệp tin tải lên.
 
-
+```
+[root@localhost ~]# chown -R apache:apache /var/www/html/*
+[root@localhost ~]# chmod -R 755 /var/www/html/*
+```
