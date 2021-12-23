@@ -54,7 +54,7 @@ yum install perl perl-devel perl-ExtUtils-Embed libxslt libxslt-devel libxml2 li
 
 ![a](https://f5-zpcloud.zdn.vn/6316244474262900441/7d038493b18a7bd4229b.jpg)
 
-- Giải nén: `tar -xzf nginx-1.15.0.tar.gz`
+- Giải nén: `tar -xzf nginx-1.19.0.tar.gz`
 - Truy cập vào đường dẫn chứa source nginx vừa giải nén: `cd nginx-1.19.0/`
 -Tiến hành config từ script
 ```
