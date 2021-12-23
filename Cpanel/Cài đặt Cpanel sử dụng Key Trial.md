@@ -64,15 +64,15 @@ IP public để lấy license và tự động active
   - Truy cập vào địa chỉ :`103.176.178.94:2087`
   - Login:
 
-  ![a](https://f5-zpcloud.zdn.vn/2523748414366497090/b1af73d0b7f47daa24e5.jpg)
+  ![a](https://f5-zpcloud.zdn.vn/4076764450356266009/8d639b36881c42421b0d.jpg)
 
   - Chấp nhận các ddiefu khoản:
 
-  ![a](https://f4-zpcloud.zdn.vn/1160592464219597822/86dd71c3b1e77bb922f6.jpg)
+  ![a](https://f5-zpcloud.zdn.vn/3269729653314843305/79b86daf6085aadbf394.jpg)
 
   - Điền email và name server:
 
-  ![a](https://f5-zpcloud.zdn.vn/2363732533336320641/58a1f7570473ce2d9762.jpg)
+  ![a](https://f5-zpcloud.zdn.vn/6725072781632377832/211bb707b92d73732a3c.jpg)
 
 
 
