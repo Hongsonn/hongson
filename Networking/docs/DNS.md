@@ -128,7 +128,7 @@ Bằng cách tải lên bản ghi TXT mới với thông tin cụ thể được
 - NS là viết tắt của 'name server' và bản ghi máy chủ định danh cho biết máy chủ DNS nào có thẩm quyền cho miền đó (tức là máy chủ nào chứa các bản ghi DNS thực tế ). Về cơ bản, các bản ghi NS cho Internet biết nơi cần đến để tìm ra địa chỉ IP của miền . Một miền thường có nhiều bản ghi NS có thể chỉ ra các máy chủ định danh chính và dự phòng cho miền đó. Nếu không có các bản ghi NS được định cấu hình đúng, người dùng sẽ không thể tải một trang web hoặc ứng dụng.
 
 - Ví dụ: 
-|example.com|loại bản ghi|giá trị|TTL
+|example.com|loại bản ghi|giá trị|TTL|
 |-|-|-|-|
 |@|NS|ns1.exampleserver.com|21600|
 
