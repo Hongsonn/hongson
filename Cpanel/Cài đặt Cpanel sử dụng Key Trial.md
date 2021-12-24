@@ -59,9 +59,9 @@ IP public để lấy license và tự động active
 
   - Cài đặt thành công: 
 
-  ![a](https://f5-zpcloud.zdn.vn/5036660937818145091/4c292353ea7720297966.jpg)
+  ![a](https://f5-zpcloud.zdn.vn/5287346857713405562/5a902266135bd905804a.jpg)
 
-  - Truy cập vào địa chỉ :`103.176.178.94:2087`
+ 
   - Login:
 
   ![a](https://f5-zpcloud.zdn.vn/4076764450356266009/8d639b36881c42421b0d.jpg)
