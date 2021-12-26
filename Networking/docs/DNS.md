@@ -159,16 +159,21 @@ Giá trị 'RNAME' ở đây đại diện cho địa chỉ email của quản t
 - **zone serial number**:
   - Là vùng kiểm soát không gian tên.Một vùng có thể bao gồm một tên miền duy nhất, một miền và nhiều miền phụ hoặc nhiều tên miền.
   - serial là số phiên bản của bản ghi SOA.
+  - Định dạng: `YYYYMMDDNN`: 
+    - `YYYY` là năm
+    - `MM` là tháng
+    - `DD` là ngày 
+    - `NN` là số lần sửa đổi dữ liệu zone trong ngày
 
 - **Các phần khác của bản ghi SOA**:
-  - MNAME: Đây là tên của máy chủ định danh chính cho khu vực. Máy chủ thứ cấp duy trì các bản ghi DNS của vùng trùng lặp nhận các bản cập nhật cho vùng từ máy chủ chính này.
-  - REFRESH: Khoảng thời gian (tính bằng giây) máy chủ phụ nên đợi trước khi yêu cầu máy chủ chính cung cấp bản ghi SOA để xem nó đã được cập nhật chưa.
-  - RETRY: Khoảng thời gian máy chủ phải đợi để yêu cầu một máy chủ định danh chính không phản hồi để cập nhật lại
-  - EXPIRE: Nếu máy chủ phụ không nhận được phản hồi từ máy chủ chính trong khoảng thời gian này, nó sẽ ngừng phản hồi các truy vấn cho khu vực.
+  - MNAME: Đây là primary nameserver cho khu vực. Secondary servers duy trì các bản ghi DNS của vùng trùng lặp nhận các bản cập nhật cho vùng từ primary nameserver.
+  - REFRESH: Khoảng thời gian (tính bằng giây) secondary servers nên đợi trước khi yêu cầu primary nameserver cung cấp bản ghi SOA để xem nó đã được cập nhật chưa.
+  - RETRY: Khoảng thời gian máy chủ phải đợi để yêu cầu một primary nameserver không phản hồi để cập nhật lại
+  - EXPIRE: Nếu secondary server không nhận được phản hồi từ primary server trong khoảng thời gian này, nó sẽ ngừng phản hồi các truy vấn cho khu vực.
 
 - **Chuyển vùng**: 
 
-Chuyển vùng DNS là quá trình gửi dữ liệu bản ghi DNS từ máy chủ định danh chính đến máy chủ định danh phụ. Bản ghi SOA được chuyển đầu tiên. Số sê-ri cho máy chủ phụ biết liệu phiên bản của nó có cần được cập nhật hay không.
+Chuyển vùng DNS là quá trình gửi dữ liệu bản ghi DNS từ primary server đến secondary server. Bản ghi SOA được chuyển đầu tiên. Số sê-ri cho secondary server biết liệu phiên bản của nó có cần được cập nhật hay không.
 
 ### 8. SRV record:
 - "service" (SRV) chỉ định máy chủ và cổng cho các dịch vụ cụ thể như voice over IP (VoIP), nhắn tin tức thì. Hầu hết các bản ghi DNS khác chỉ xác định một máy chủ hoặc một địa chỉ IP , nhưng các bản ghi SRV cũng bao gồm một cổng tại địa chỉ IP đó. Một số giao thức Internet yêu cầu sử dụng các bản ghi SRV để hoạt động.
