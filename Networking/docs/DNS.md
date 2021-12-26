@@ -15,7 +15,15 @@
 
 Biểu tượng "@" trong ví dụ này cho biết đây là bản ghi cho miền gốc và giá trị "14400" là TTL (thời gian tồn tại) , được liệt kê bằng giây. TTL mặc định cho bản ghi A là 14.400 giây. Điều này có nghĩa là nếu một bản ghi A được cập nhật, thì phải mất 240 phút (14.400 giây) để có hiệu lực.
 
-Còn đối với DNS record, TTL là một giá trị xác định, dùng để chỉ thời gian máy chủ bộ nhớ đệm DNS có thể ghi nhớ và lưu trữ một bản ghi DNS trước khi tiếp nhận và nhận bản ghi mới từ máy chủ DNS chính.
+- TTL là thời gian tồn tại của một bản ghi (record) cấu hình tên miền được nhớ bởi một máy chủ DNS trung gian.
+
+Giá trị này thương tính bằng giây. Nếu nó càng lớn, máy chủ DNS trung gian sẽ nhớ thông tin càng lâu, đồng nghĩa với việc thông tin chậm được cập nhật trên các máy chủ DNS trung gian nếu tên miền thay đổi thông tin trên máy chủ DNS chính.
+
+Ví dụ: Tên miền matbao.com sử dụng DNS của Mắt Bão (ns1.matbao.com) và được cấu hình trỏ về ip 112.78.2.101 và TTL của tên miền là 3600s.
+
+Nếu bạn sử dụng DNS của Google và vào trình duyệt gõ matbao.com thì máy tính của bạn sẽ gửi yêu cầu phân giải tên miền matbao.com đến máy chủ DNS của Google, vì máy chủ này chưa có thông tin về tên miền này nên Google phải hỏi ns1.matbao.com tên miền này thông tin IP, ns1.matbao.com sẽ trả lời là 112.78.2.101 và TTL là 3600s.
+
+Sau đó google sẽ lưu lại giá trị này. Trong vòng 3600s này nếu tên miền matbao.com thay đổi ip thành 112.78.2.201 thì ai đang dùng DNS của google vẫn nhận được kết quả là 112.78.2.101.
 
 ### 2. **AAAA Record**
 - Bản ghi DNS AAAA khớp tên miền với địa chỉ IPv6. Bản ghi DNS AAAA chính xác giống như bản ghi DNS A , ngoại trừ việc chúng lưu trữ địa chỉ IPv6 của miền thay vì địa chỉ IPv4 của miền đó.
@@ -163,7 +171,7 @@ Giá trị 'RNAME' ở đây đại diện cho địa chỉ email của quản t
     - `YYYY` là năm
     - `MM` là tháng
     - `DD` là ngày 
-    - `NN` là số lần sửa đổi dữ liệu zone trong ngày
+    - `NN` là số lần sửa đổi dữ liệu zone 
 
 - **Các phần khác của bản ghi SOA**:
   - MNAME: Đây là primary nameserver cho khu vực. Secondary servers duy trì các bản ghi DNS của vùng trùng lặp nhận các bản cập nhật cho vùng từ primary nameserver.
