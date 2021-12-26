@@ -15,6 +15,8 @@
 
 Biểu tượng "@" trong ví dụ này cho biết đây là bản ghi cho miền gốc và giá trị "14400" là TTL (thời gian tồn tại) , được liệt kê bằng giây. TTL mặc định cho bản ghi A là 14.400 giây. Điều này có nghĩa là nếu một bản ghi A được cập nhật, thì phải mất 240 phút (14.400 giây) để có hiệu lực.
 
+Còn đối với DNS record, TTL là một giá trị xác định, dùng để chỉ thời gian máy chủ bộ nhớ đệm DNS có thể ghi nhớ và lưu trữ một bản ghi DNS trước khi tiếp nhận và nhận bản ghi mới từ máy chủ DNS chính.
+
 ### 2. **AAAA Record**
 - Bản ghi DNS AAAA khớp tên miền với địa chỉ IPv6. Bản ghi DNS AAAA chính xác giống như bản ghi DNS A , ngoại trừ việc chúng lưu trữ địa chỉ IPv6 của miền thay vì địa chỉ IPv4 của miền đó.
 
