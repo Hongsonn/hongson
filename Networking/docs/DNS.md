@@ -117,7 +117,7 @@ Các chuỗi văn bản đi trong trường giá trị, có thể là bất kì 
 - Định dạng lưu giữ liệu trong bản ghi TXT "atttribute=value"
 
 |example.com|loại bản ghi|giá trị|
-|-|-|-|-|
+|-|-|-|
 |@|TXT|"print=Ipr5" |
 
 - Bản ghi TXT giúp ngăn chặn thư rác
