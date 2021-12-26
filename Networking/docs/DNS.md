@@ -101,6 +101,7 @@ Bản ghi CNAME được sử dụng để tham chiếu alias domain thay vì t�
 
 ### 5. TXT record:
 - Bản ghi DNS 'text' (TXT) cho phép administrator nhập text vào DNS. Bản ghi TXT ban đầu được dự định là nơi lưu trữ các ghi chú mà con người có thể đọc được. Tuy nhiên, bây giờ cũng có thể đưa một số dữ liệu mà máy có thể đọc được vào bản ghi TXT. Một miền có thể có nhiều bản ghi TXT.
+- Những bản ghi này thường được sử dụng để bảo mật email.
 
 - Ví dụ TXT record:
 
