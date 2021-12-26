@@ -54,7 +54,7 @@ Việc trỏ một bản ghi CNAME đến một bản ghi CNAME khác là không
 |@|CNAME|là 1 alias của www.example.com|32600|
 
   - Điểm trỏ đến CNAME cho www.example.com:
-  
+
 |example.com|loại bản ghi|giá trị|TTL|
 |-|-|-|-|
 |@|CNAME|là 1 alias của example.com|32600|
@@ -114,8 +114,7 @@ Ngày nay, hai trong số những cách sử dụng quan trọng nhất đối v
 
 Các chuỗi văn bản đi trong trường giá trị, có thể là bất kì văn bản nào mà người quản trị muốn liên kết. Sẽ có giới hạn độ lớn của bản ghi và số lượng bản ghi có thể lưu trữ.
 
-- Định dạng lưu giữ liệu trong bản ghi TXT
-"atttribute=value"
+- Định dạng lưu giữ liệu trong bản ghi TXT "atttribute=value"
 
 |example.com|loại bản ghi|giá trị|
 |-|-|-|-|
