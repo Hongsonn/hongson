@@ -54,6 +54,7 @@ Việc trỏ một bản ghi CNAME đến một bản ghi CNAME khác là không
 |@|CNAME|là 1 alias của www.example.com|32600|
 
   - Điểm trỏ đến CNAME cho www.example.com:
+  
 |example.com|loại bản ghi|giá trị|TTL|
 |-|-|-|-|
 |@|CNAME|là 1 alias của example.com|32600|
