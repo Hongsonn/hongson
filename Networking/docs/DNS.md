@@ -266,6 +266,8 @@ Các máy chủ có độ ưu tiên thấp hơn, sẽ nhận được nhiều l�
 
 16. SSHFP record - "SSH public key fingerprints" lưu trữ SSH public key.
 
-
+### Note
+- Primary server: chứa tất cả các bản ghi tài nguyên có liên quan và xử lý các truy vấn DNS cho một miền 
+- Secondary server: chứa các bản sao tệp vùng chỉ đọc, nghĩa là không thể sửa đổi chúng
 
 
