@@ -1,5 +1,5 @@
 ### 1. Chuẩn bị:
-- Đã cài Nginx trước đó
+- Đã có LEMP trước đó.
 
 ### 2. Cài đặt MariaDB
 - Sử dụng mariadb, tiến hành cài đặt với lệnh:
@@ -23,6 +23,7 @@ sudo mysql_secure_installation
 ```
 
 ![mysql](https://f5-zpcloud.zdn.vn/784770654387219477/87da1a32433d8963d02c.jpg)
+
 ![mysql](https://f5-zpcloud.zdn.vn/5135869137900956958/03ad3a967999b3c7ea88.jpg)
 
 1. Bước này yêu cầu bạn nhập mật khẩu gần đây cho root. Nếu  mới cài lần đầu thì nhấn Enter để bỏ qua.
@@ -108,5 +109,27 @@ Bye
 ```
 
 ### 4. Tải và cài đặt WP
- - Tải WP: `wget https://wordpress.org/latest.tar.gz`
+- Tải WP: `wget https://wordpress.org/latest.zip`
+- Giải nén file: `unzip latest.zip && mv wordpress/* . && rm -rf wordpress`
 
+ ![a](https://f4-zpcloud.zdn.vn/6624057564311531552/a04d2fdd57019d5fc410.jpg)
+
+- Kết quả sau khi giải nén xong: 
+
+![a](https://f4-zpcloud.zdn.vn/6624057564311531552/a04d2fdd57019d5fc410.jpg)
+
+- Kiểm tra trên trình duyệt: 
+
+![a](https://f5-zpcloud.zdn.vn/8228299591195214966/dd8976b50469ce379778.jpg)
+
+- Điền thông tin: 
+
+![a](https://f5-zpcloud.zdn.vn/8067855021123177477/ff5865a3e57f2f21766e.jpg)
+
+- Tiến hành đăng nhập: 
+
+![a](https://f4-zpcloud.zdn.vn/4192834961159993758/b03688b0376cfd32a47d.jpg)
+
+- Giao diện dashboard:
+
+![a](https://f4-zpcloud.zdn.vn/1929491479448438990/352333ce8e12444c1d03.jpg)
