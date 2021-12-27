@@ -15,6 +15,16 @@
 
 Biểu tượng "@" trong ví dụ này cho biết đây là bản ghi cho miền gốc và giá trị "14400" là TTL (thời gian tồn tại) , được liệt kê bằng giây. TTL mặc định cho bản ghi A là 14.400 giây. Điều này có nghĩa là nếu một bản ghi A được cập nhật, thì phải mất 240 phút (14.400 giây) để có hiệu lực.
 
+- TTL là thời gian tồn tại của một bản ghi (record) cấu hình tên miền được nhớ bởi một máy chủ DNS trung gian.
+
+Giá trị này thương tính bằng giây. Nếu nó càng lớn, máy chủ DNS trung gian sẽ nhớ thông tin càng lâu, đồng nghĩa với việc thông tin chậm được cập nhật trên các máy chủ DNS trung gian nếu tên miền thay đổi thông tin trên máy chủ DNS chính.
+
+Ví dụ: Tên miền matbao.com sử dụng DNS của Mắt Bão (ns1.matbao.com) và được cấu hình trỏ về ip 112.78.2.101 và TTL của tên miền là 3600s.
+
+Nếu bạn sử dụng DNS của Google và vào trình duyệt gõ matbao.com thì máy tính của bạn sẽ gửi yêu cầu phân giải tên miền matbao.com đến máy chủ DNS của Google, vì máy chủ này chưa có thông tin về tên miền này nên Google phải hỏi ns1.matbao.com tên miền này thông tin IP, ns1.matbao.com sẽ trả lời là 112.78.2.101 và TTL là 3600s.
+
+Sau đó google sẽ lưu lại giá trị này. Trong vòng 3600s này nếu tên miền matbao.com thay đổi ip thành 112.78.2.201 thì ai đang dùng DNS của google vẫn nhận được kết quả là 112.78.2.101.
+
 ### 2. **AAAA Record**
 - Bản ghi DNS AAAA khớp tên miền với địa chỉ IPv6. Bản ghi DNS AAAA chính xác giống như bản ghi DNS A , ngoại trừ việc chúng lưu trữ địa chỉ IPv6 của miền thay vì địa chỉ IPv4 của miền đó.
 
@@ -52,6 +62,7 @@ Việc trỏ một bản ghi CNAME đến một bản ghi CNAME khác là không
 |@|CNAME|là 1 alias của www.example.com|32600|
 
   - Điểm trỏ đến CNAME cho www.example.com:
+
 |example.com|loại bản ghi|giá trị|TTL|
 |-|-|-|-|
 |@|CNAME|là 1 alias của example.com|32600|
@@ -98,6 +109,7 @@ Bản ghi CNAME được sử dụng để tham chiếu alias domain thay vì t�
 
 ### 5. TXT record:
 - Bản ghi DNS 'text' (TXT) cho phép administrator nhập text vào DNS. Bản ghi TXT ban đầu được dự định là nơi lưu trữ các ghi chú mà con người có thể đọc được. Tuy nhiên, bây giờ cũng có thể đưa một số dữ liệu mà máy có thể đọc được vào bản ghi TXT. Một miền có thể có nhiều bản ghi TXT.
+- Những bản ghi này thường được sử dụng để bảo mật email.
 
 - Ví dụ TXT record:
 
@@ -111,11 +123,10 @@ Ngày nay, hai trong số những cách sử dụng quan trọng nhất đối v
 
 Các chuỗi văn bản đi trong trường giá trị, có thể là bất kì văn bản nào mà người quản trị muốn liên kết. Sẽ có giới hạn độ lớn của bản ghi và số lượng bản ghi có thể lưu trữ.
 
-- Định dạng lưu giữ liệu trong bản ghi TXT
-"atttribute=value"
+- Định dạng lưu giữ liệu trong bản ghi TXT "atttribute=value"
 
 |example.com|loại bản ghi|giá trị|
-|-|-|-|-|
+|-|-|-|
 |@|TXT|"print=Ipr5" |
 
 - Bản ghi TXT giúp ngăn chặn thư rác
@@ -128,6 +139,7 @@ Bằng cách tải lên bản ghi TXT mới với thông tin cụ thể được
 - NS là viết tắt của 'name server' và bản ghi máy chủ định danh cho biết máy chủ DNS nào có thẩm quyền cho miền đó (tức là máy chủ nào chứa các bản ghi DNS thực tế ). Về cơ bản, các bản ghi NS cho Internet biết nơi cần đến để tìm ra địa chỉ IP của miền . Một miền thường có nhiều bản ghi NS có thể chỉ ra các máy chủ định danh chính và dự phòng cho miền đó. Nếu không có các bản ghi NS được định cấu hình đúng, người dùng sẽ không thể tải một trang web hoặc ứng dụng.
 
 - Ví dụ: 
+
 |example.com|loại bản ghi|giá trị|TTL|
 |-|-|-|-|
 |@|NS|ns1.exampleserver.com|21600|
@@ -155,16 +167,21 @@ Giá trị 'RNAME' ở đây đại diện cho địa chỉ email của quản t
 - **zone serial number**:
   - Là vùng kiểm soát không gian tên.Một vùng có thể bao gồm một tên miền duy nhất, một miền và nhiều miền phụ hoặc nhiều tên miền.
   - serial là số phiên bản của bản ghi SOA.
+  - Định dạng: `YYYYMMDDNN`: 
+    - `YYYY` là năm
+    - `MM` là tháng
+    - `DD` là ngày 
+    - `NN` là số lần sửa đổi dữ liệu zone 
 
 - **Các phần khác của bản ghi SOA**:
-  - MNAME: Đây là tên của máy chủ định danh chính cho khu vực. Máy chủ thứ cấp duy trì các bản ghi DNS của vùng trùng lặp nhận các bản cập nhật cho vùng từ máy chủ chính này.
-  - REFRESH: Khoảng thời gian (tính bằng giây) máy chủ phụ nên đợi trước khi yêu cầu máy chủ chính cung cấp bản ghi SOA để xem nó đã được cập nhật chưa.
-  - RETRY: Khoảng thời gian máy chủ phải đợi để yêu cầu một máy chủ định danh chính không phản hồi để cập nhật lại
-  - EXPIRE: Nếu máy chủ phụ không nhận được phản hồi từ máy chủ chính trong khoảng thời gian này, nó sẽ ngừng phản hồi các truy vấn cho khu vực.
+  - MNAME: Đây là primary nameserver cho khu vực. Secondary servers duy trì các bản ghi DNS của vùng trùng lặp nhận các bản cập nhật cho vùng từ primary nameserver.
+  - REFRESH: Khoảng thời gian (tính bằng giây) secondary servers nên đợi trước khi yêu cầu primary nameserver cung cấp bản ghi SOA để xem nó đã được cập nhật chưa.
+  - RETRY: Khoảng thời gian máy chủ phải đợi để yêu cầu một primary nameserver không phản hồi để cập nhật lại
+  - EXPIRE: Nếu secondary server không nhận được phản hồi từ primary server trong khoảng thời gian này, nó sẽ ngừng phản hồi các truy vấn cho khu vực.
 
 - **Chuyển vùng**: 
 
-Chuyển vùng DNS là quá trình gửi dữ liệu bản ghi DNS từ máy chủ định danh chính đến máy chủ định danh phụ. Bản ghi SOA được chuyển đầu tiên. Số sê-ri cho máy chủ phụ biết liệu phiên bản của nó có cần được cập nhật hay không.
+Chuyển vùng DNS là quá trình gửi dữ liệu bản ghi DNS từ primary server đến secondary server. Bản ghi SOA được chuyển đầu tiên. Số sê-ri cho secondary server biết liệu phiên bản của nó có cần được cập nhật hay không.
 
 ### 8. SRV record:
 - "service" (SRV) chỉ định máy chủ và cổng cho các dịch vụ cụ thể như voice over IP (VoIP), nhắn tin tức thì. Hầu hết các bản ghi DNS khác chỉ xác định một máy chủ hoặc một địa chỉ IP , nhưng các bản ghi SRV cũng bao gồm một cổng tại địa chỉ IP đó. Một số giao thức Internet yêu cầu sử dụng các bản ghi SRV để hoạt động.
@@ -249,6 +266,8 @@ Các máy chủ có độ ưu tiên thấp hơn, sẽ nhận được nhiều l�
 
 16. SSHFP record - "SSH public key fingerprints" lưu trữ SSH public key.
 
-
+### Note
+- Primary server: chứa tất cả các bản ghi tài nguyên có liên quan và xử lý các truy vấn DNS cho một miền 
+- Secondary server: chứa các bản sao tệp vùng chỉ đọc, nghĩa là không thể sửa đổi chúng
 
 
