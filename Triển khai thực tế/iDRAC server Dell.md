@@ -22,7 +22,7 @@
 
 ### 3. Giám sát các thông tin tên iDRAC
 1. **Tab Server**
-- `Properties`: Cung cấp các thông tin chung về server và đường link truy cập nhanh tới các mục khác, cửa sổ console để remotr desktop, thao tác nhanh đối với server như Power ON /OFF…, thông tin về về server như BIOS, IP, Firmware OS. 
+- `Properties`: Cung cấp các thông tin chung về server và đường link truy cập nhanh tới các mục khác, cửa sổ console để remote desktop, thao tác nhanh đối với server như Power ON /OFF…, thông tin về về server như BIOS, IP, Firmware OS. 
 
 ![a](https://f4-zpcloud.zdn.vn/2193891662624777759/e2feebc9a975632b3a64.jpg)
 
