@@ -49,67 +49,94 @@ Sau khi thực hiện xong các bước ở trên, ta tiến hành khởi độn
   - Software
   - System: Installation destination, netwwork & hostname, KDUMP, Security Polycy
 
-![a](https://f5-zpcloud.zdn.vn/6534676662245234794/44541723a49e6ec0378f.jpg)
+![a](https://f5-zpcloud.zdn.vn/8142148017222921655/9d086639827f4f21166e.jpg)
 
 ![a](https://f4-zpcloud.zdn.vn/7083912932388374575/e9d9900b22b6e8e8b1a7.jpg)
 
 - System: **Installation destination**, lựa chọn  đĩa cứng và tích **I will configure Partitioning** 
 
-![a](https://f5-zpcloud.zdn.vn/5044785252567738907/47726d43c5fe0fa056ef.jpg)
-
 - Phân vùng đĩa cứng thủ công , Chọn LVM trong Partitioning Scheme
 
-![a](https://f5-zpcloud.zdn.vn/6583026833495938911/886861b1c50c0f52561d.jpg)
 
 - Tạo phân vùng (/boot) bằng cách click vào dấu (+), nhập vào dung lượng Click **Add Mount Point**
 
-![a](https://f5-zpcloud.zdn.vn/1421017036052080081/4f7a5fa981144b4a1205.jpg)
+![a](https://f5-zpcloud.zdn.vn/3054290806064873113/06beb6fca1bd6ce335ac.jpg)
 
 - Tạo phân vùng (/swap)
-
-![a](https://f5-zpcloud.zdn.vn/718178088885897700/91be23f3f94e33106a5f.jpg)
+  - Đối với server có cấu hình RAM thấp, thì sẽ cần dùng đến phân vùng Swap 
+  - Swap thì thường được đặt gấp đôi với RAM vật lý
 
 - Phần bộ nhớ còn lại chia cho các phân vùng khác:
 
-![a](https://f5-zpcloud.zdn.vn/6344854961605436515/54b0b3b3600eaa50f31f.jpg)
-
 - Chọn **ext4** cho phân vùng (/boot) trong Sytem 
 
-![a](https://f5-zpcloud.zdn.vn/836697277298393273/62f8a9d7606aaa34f37b.jpg)
+![a](https://f5-zpcloud.zdn.vn/5532302619412319855/76b5deb0d5f118af41e0.jpg)
 
 - Chọn **ext4** cho phân vùng (/) trong Sytem 
 
-![a](https://f5-zpcloud.zdn.vn/3158274813049038369/c7c1111dd2a018fe41b1.jpg)
+![a](https://f5-zpcloud.zdn.vn/806154357697113249/1516d7d4da9517cb4e84.jpg)
 
 - Sau đó chọn **Done** và chọn **Accept Change**
 
-![a](https://f5-zpcloud.zdn.vn/7230067106064080357/b5547fbe80034a5d1312.jpg)
+![a](https://f5-zpcloud.zdn.vn/5834660697418947114/d5d62d602221ef7fb630.jpg)
 
 - **Network & Host name**
 Chọn **Enable** để bật kết nối
 
-![a](https://f4-zpcloud.zdn.vn/3845904651191799899/f569f8bb0a06c0589917.jpg)
+![a](https://f5-zpcloud.zdn.vn/2832262989033767064/1ad63eeb3daaf0f4a9bb.jpg)
 
 - Sau khi cấu hình xong, chọn **Begin Installtion**
 
-![a](https://f5-zpcloud.zdn.vn/2791397824649735491/3bb3b2545de997b7cef8.jpg)
+![a](https://f5-zpcloud.zdn.vn/8358411801569990991/04caa01da55c6802314d.jpg)
 
 - Cài đặt mật khẩu cho **root** trong tùy chọn **root password**
 
-![a](https://f4-zpcloud.zdn.vn/4997289249392119754/8aed5e82b53f7f61262e.jpg)
+![a](https://f4-zpcloud.zdn.vn/1476308376420989754/96a3f12ff66e3b30627f.jpg)
 
 - Chọn **Reboot** để hoàn thành 
 
-![a](https://f5-zpcloud.zdn.vn/1251757937844329448/e4c27f1054ac9ef2c7bd.jpg)
+![a](https://f5-zpcloud.zdn.vn/3807774005444072086/66e58023ab62663c3f73.jpg)
 
 - Đăng nhập, kiểm tra địa chỉ ip đã cài và ổ địa đã cài
 
-![a](https://f4-zpcloud.zdn.vn/6565263998380166927/de19cb32918e5bd0029f.jpg)
+![a](https://f4-zpcloud.zdn.vn/7493663437588204154/7b21b68ac3c90e9757d8.jpg)
 
-![a](https://f5-zpcloud.zdn.vn/1765754726673964003/9713a11ef5a23ffc66b3.jpg)
+### III. Lấy lại mật khẩu root
 
+#### Bước 1: Trong trình đơn khởi động grub chọn tùy chọn để chỉnh sửa.
 
+- Trong trình đơn khởi động grub chọn tùy chọn để chỉnh sửa.
 
+![a](https://f5-zpcloud.zdn.vn/8275745656770867030/6f4173484405895bd014.jpg)
 
+#### Bước 2: Chọn e và  tìm tới dòng có chữ ro crashkernel=auto
+Sau đó thêm dòng `rw init=/sysroot/bin/sh`
 
+![a](https://f5-zpcloud.zdn.vn/5641367730501702225/38973fd40399cec79788.jpg)
 
+#### Bước 3: Sau đó Ctrl+X để bắt đầu và chế độ single user mode.
+
+![a](https://f5-zpcloud.zdn.vn/62374433458187826/754ba0729f3f52610b2e.jpg)
+
+#### Bước 4: Bây giờ truy cập vào hệ thống với lệnh này:
+
+`# chroot /sysroot`
+
+#### Bước 5: Tạo mật khẩu mới cho tài khoản root.
+
+`# passwd root`
+
+![a](https://f5-zpcloud.zdn.vn/2196975818655144374/89401d282e65e33bba74.jpg)
+
+#### Bước 6: Update thông tin vào selinux và thoát khỏi chế độ chroot.
+
+```
+# touch /.autorelabel
+# exit
+```
+
+![a](https://f5-zpcloud.zdn.vn/6019242068776749528/1d6b028634cbf995a0da.jpg)
+
+- Đăng nhập với mật khẩu vừa tạo ra:
+
+![a](https://f5-zpcloud.zdn.vn/6820230524895797056/64f0639416d9db8782c8.jpg)
