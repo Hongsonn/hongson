@@ -41,11 +41,11 @@
 
 - Tạo phân vùng (/boot)
 
-![a](https://f4-zpcloud.zdn.vn/7960266705408156700/4aa0c232fe5c33026a4d.jpg)
+![a](https://f5-zpcloud.zdn.vn/8731719046559775330/72e4efb441c08c9ed5d1.jpg)
 
 - Tạo phân vùng (/)
 
-![a](https://f5-zpcloud.zdn.vn/2757082542535492772/d3c9ec22dd4c1012495d.jpg)
+![a](https://f5-zpcloud.zdn.vn/4238915020512083120/c3151c1ab16e7c30257f.jpg)
 
 - Chọn Format, để định dạng lại ổ đĩa.
 
@@ -61,7 +61,7 @@
 
 - Sau khi cài đặt hoàn tất, chúng ta khởi động lại máy
 
-![a](https://f5-zpcloud.zdn.vn/2828137409821306780/0920228d66e3abbdf2f2.jpg)
+![a](https://f5-zpcloud.zdn.vn/4642946741892209353/b60865b8bdcc709229dd.jpg)
 
 - Sau khi khởi động xong, xuất hiện màn hình cấu hình.
 
