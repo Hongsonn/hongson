@@ -13,28 +13,28 @@
 
 ![a](https://f5-zpcloud.zdn.vn/130225057067705347/ee5f8deab4e879b620f9.jpg)
 
-4. Bật tường lửa và thiết lập rule để có thể kết nối ra bên ngoài.
+4. Bật tường lửa
 
 - Bật tường lửa:
 
 ![a](https://f5-zpcloud.zdn.vn/3056006056382819111/0af148ad49af84f1ddbe.jpg)
 
-- Thiết lập port remote:
+5. Thiết lập port remote:
 
-  - Truy cập regedit
+- Truy cập regedit
 
 ![a](https://f5-zpcloud.zdn.vn/7676020419751501149/67d59165b96774392d76.jpg)
 
 
-  - Truy cập theo đường dẫn : `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp\PortNumber`
+- Truy cập theo đường dẫn : `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp\PortNumber`
 
 ![a](https://f5-zpcloud.zdn.vn/8389912802096351873/14b79e6abb6876362f79.jpg)
 
-  - Chọn đến Modify
+- Chọn đến Modify
 
 ![a](https://f4-zpcloud.zdn.vn/2202330171744222366/2f354d2e6f2ca272fb3d.jpg)
 
-  - Lựa chọn Decimal và nhập port mà bạn muốn đổi
+- Lựa chọn Decimal và nhập port mà bạn muốn đổi
 
 ![a](https://f5-zpcloud.zdn.vn/3961371693455980008/877012af36adfbf3a2bc.jpg)
 
