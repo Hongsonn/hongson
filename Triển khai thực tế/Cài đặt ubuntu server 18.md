@@ -52,5 +52,46 @@
 
 ![a](https://f4-zpcloud.zdn.vn/1731166500867579602/7cb269fa04e8c9b690f9.jpg)
 
-### Cài đặt ip tĩnh
+### I. Cài đặt ip tĩnh
+
+- Xác định card mạng đang được sử dụng, và tiến hành chỉnh sửa file:
+
+```
+vi /etc/netplan/00-installer-config.yaml
+```
+
+- Tiến hành sửa file lại như sau:
+
+![a](https://f4-zpcloud.zdn.vn/3459672418446660673/ada57a35b52c7872213d.jpg)
+
+- Sau đó lưu tệp lại và áp dụng các thay đổi: `netplan apply`
+
+### II. Truy cập bằng ssh
+
+- Kiểm tra xem ssh hiện có đang chạy không: `systemctl status ssh`
+
+![a](https://f5-zpcloud.zdn.vn/1270197244856673629/4bc603dc8ace47901edf.jpg)
+
+- Kiểm tra tường lửa và mở cổn ssh bằng lệnh ufw:
+
+```
+ufw status
+ufw allow ssh
+```
+
+- Để đăng nhập được ssh dưới quyền **root**
+  - Ta cần chỉnh sửa file `vi /etc/ssh/sshd_config`
+
+![a](https://f5-zpcloud.zdn.vn/6216297175284361074/ac4299646776aa28f367.jpg)
+
+  - Ta thêm dòng `PermitRootLogin yes`
+
+![a](https://f4-zpcloud.zdn.vn/2117181870754349785/6999b69d498f84d1dd9e.jpg)
+
+  - Sau đó, ta sẽ restart lại dịch vụ ssh
+
+```
+service ssh restart
+```
+
 
