@@ -29,8 +29,6 @@
 
 ![a](https://f5-zpcloud.zdn.vn/5466306223438931207/c241464ec47f0921506e.jpg)
 
-![a](https://f4-zpcloud.zdn.vn/1374965338392713455/c2db61b5da8417da4e95.jpg)
-
 
 - Ta điền thông tin cá nhân, tên use và mật khẩu, sau đó chọn Done.
 
