@@ -67,3 +67,26 @@ vi /etc/netplan/00-installer-config.yaml
 
 - Sau đó lưu tệp lại và áp dụng các thay đổi: `# netplan apply`
 
+### II. Truy cập bằng ssh
+
+- Kiểm tra tường lửa và mở cổn ssh bằng lệnh ufw:
+
+```
+ufw status
+ufw allow ssh
+```
+
+- Để đăng nhập được ssh dưới quyền **root**
+  - Ta cần chỉnh sửa file `vi /etc/ssh/sshd_config`
+
+![a](https://f5-zpcloud.zdn.vn/6216297175284361074/ac4299646776aa28f367.jpg)
+
+  - Ta thêm dòng `PermitRootLogin yes`
+
+![a](https://f5-zpcloud.zdn.vn/7734485907080429510/3ab3972c2f13e24dbb02.jpg)
+
+  - Sau đó, ta sẽ restart lại dịch vụ ssh
+
+```
+service ssh restart
+```
