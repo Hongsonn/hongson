@@ -44,7 +44,7 @@ Password: X7ynQhEJvZ
 
   - Chọn database sau đó tải xuống:
 
-![a](https://f5-zpcloud.zdn.vn/2340453534045337308/54585c574d8a80d4d99b.jpg)
+![a](https://f6-zpcloud.zdn.vn/1764620696654220136/cf6f960e34d7f989a0c6.jpg)
 
   - DB tải xuống có dạng 
 
