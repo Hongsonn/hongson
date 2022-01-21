@@ -44,7 +44,7 @@ Password: X7ynQhEJvZ
 
   - Chọn database sau đó tải xuống:
 
-![a](https://f5-zpcloud.zdn.vn/2340453534045337308/54585c574d8a80d4d99b.jpg)
+![a](https://f6-zpcloud.zdn.vn/1764620696654220136/cf6f960e34d7f989a0c6.jpg)
 
   - DB tải xuống có dạng 
 
@@ -56,7 +56,7 @@ Password: X7ynQhEJvZ
 
   - Nhập các thông tin tạo tài khoản:
 
-![a](https://f4-zpcloud.zdn.vn/6832163479827128421/c17879857d58b006e949.jpg)
+![a](https://f6-zpcloud.zdn.vn/4641816332489315648/7d20ff4f989655c80c87.jpg)
 
   - Truy cập List user:
 
@@ -64,27 +64,27 @@ Password: X7ynQhEJvZ
 
   - Login với tài khoản user vừa tạo
 
-![a](https://f5-zpcloud.zdn.vn/7527314102875626422/396fd6f2ec2f2171783e.jpg)
+![a](https://f6-zpcloud.zdn.vn/2845295316959491548/3677e1b17a68b736ee79.jpg)
 
 - Truy cập MySQL Management
 
-![a](https://f5-zpcloud.zdn.vn/3074743852734886245/92b59fc5a1186c463509.jpg)
+![a](https://f6-zpcloud.zdn.vn/2562903934834487376/4326f83668efa5b1fcfe.jpg)
 
   - Tạo database mới 
 
-![a](https://f5-zpcloud.zdn.vn/2683631011519774193/ccee516f6fb2a2ecfba3.jpg)
+![a](https://f6-zpcloud.zdn.vn/1599831181098432727/c3032ff4a22d6f73363c.jpg)
 
   - Nhập các thông tin để tạo DB:
 
-![a](https://f5-zpcloud.zdn.vn/2011331268855011515/d2fc0a2235fff8a1a1ee.jpg)
+![a](https://f6-zpcloud.zdn.vn/7318305047287486669/2b0e7a1bf3c23e9c67d3.jpg)
 
   - Truy cập phpMyAdmin với DB vừa tạo và import file DB bên host cũ
 
-![a](https://f5-zpcloud.zdn.vn/4417964799770759697/a908ca5482894fd71698.jpg)
+![a](https://f4-zpcloud.zdn.vn/8185971815175733884/05fc7a27fbfe36a06fef.jpg)
 
 - Quay lại giao diện chính DA truy cập file:
 
-![a](https://f5-zpcloud.zdn.vn/1991109899013490770/8df8e84fa3926ecc3783.jpg)
+![a](https://f6-zpcloud.zdn.vn/6246489300408113763/527e3224b6fd7ba322ec.jpg)
 
   - TRuy cập `Public_html` và giải nén file source code từ bên host cũ
 
@@ -98,7 +98,7 @@ Password: X7ynQhEJvZ
 
   - Chỉnh sửa DB_name, DB_user, DB_password, ứng với DB vừa tạo trước đó. Sau đó 
 
-![a](https://f5-zpcloud.zdn.vn/4603440451012107140/a722723035edf8b3a1fc.jpg)
+![a](https://f6-zpcloud.zdn.vn/2000947895121976497/44bdf6774eae83f0dabf.jpg)
 
 - Chỉnh sửa file hots: `C:\Windows\System32\drivers\etc` sau đó lưu lại. Để kiểm tra trang web đã hoạt động chưa.
 
@@ -116,33 +116,33 @@ Password: X7ynQhEJvZ
 
 ![a](https://f4-zpcloud.zdn.vn/8679171885525450252/d2bbffa4b67b7b25226a.jpg)
 
-![a](https://f5-zpcloud.zdn.vn/244294215177116977/f5af323f78e0b5beecf1.jpg)
+![a](https://f4-zpcloud.zdn.vn/5074139534621371705/fa75433afee333bd6af2.jpg)
 
-![a](https://f5-zpcloud.zdn.vn/1810129936020689975/8153cc64b4bb79e520aa.jpg)
+![a](https://f5-zpcloud.zdn.vn/7604808865193032171/6178076db7b47aea23a5.jpg)
 
 - Quay lại truy cập DA với tài khoản user
 
-![a](https://f4-zpcloud.zdn.vn/1227130288639490839/1021351c76c3bb9de2d2.jpg)
+![a](https://f4-zpcloud.zdn.vn/2946541168649829217/89a628b49a6d57330e7c.jpg)
 
   - TRuy cập `SSL Certificates`
 
-![a](https://f5-zpcloud.zdn.vn/7215134852349086187/679fb83ffbe036be6ff1.jpg)
+![a](https://f6-zpcloud.zdn.vn/7611475117603225912/e88da1b4156dd833817c.jpg)
 
   - Thêm CRT và Key vào mục `Paste a pre-generated certificate and key`
 
-![a](https://f4-zpcloud.zdn.vn/4269233546256133410/e1cfe707a3d86e8637c9.jpg)
+![a](https://f5-zpcloud.zdn.vn/7529256671425557706/4e0ceff3592a9474cd3b.jpg)
 
   - Để thêm chứng chỉ CA
 
-![a](https://f4-zpcloud.zdn.vn/8274608961108570496/6befc48bbf54720a2b45.jpg)
+![a](https://f4-zpcloud.zdn.vn/572049154009698719/dcbc93203bf9f6a7afe8.jpg)
 
   - Tích vào mục `Use a CA Cert`
 
-![a](https://f4-zpcloud.zdn.vn/42674404349777662/20e720755caa91f4c8bb.jpg)
+![a](https://f6-zpcloud.zdn.vn/4125762896311425200/5e9a3c1596cc5b9202dd.jpg)
 
   - Tích vào mục `Force SSL with https redirect` 
 
-![a](https://f6-zpcloud.zdn.vn/7033487245079483505/b48ca940d79f1ac1438e.jpg)
+![a](https://f5-zpcloud.zdn.vn/3482541547998333972/752b55c1f81835466c09.jpg)
 
 - Sau đó kiểm tra lại trang web
 
