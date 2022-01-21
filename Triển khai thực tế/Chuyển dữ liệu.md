@@ -90,7 +90,7 @@ Password: X7ynQhEJvZ
 
 ![a](https://f4-zpcloud.zdn.vn/6714621798955012360/7a3906a94a74872ade65.jpg)
 
-![a](https://f5-zpcloud.zdn.vn/5437343625750891164/0ae5f5cdb410794e2001.jpg)
+![a](https://f5-zpcloud.zdn.vn/2053966875884550219/54692d5a2680ebdeb291.jpg)
 
 - Chỉnh sửa file `Wp-cònig.php`
 
