@@ -2,7 +2,7 @@ https://kb.pavietnam.vn/huong-dan-cai-dat-imap-tren-outlook-2019.html
 
 
 - Sử dụng pop
-  - SSL: 996, 465
+  - SSL: 995, 465
 
 ![a](https://f21-zpc.zdn.vn/6548286211041042754/77c12456dc7f1021496e.jpg)
 
