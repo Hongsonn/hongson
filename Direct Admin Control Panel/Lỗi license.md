@@ -17,3 +17,8 @@ Khi hỏi password anh em nhập pass là: nh-arquira
 debian / ubuntu thì chạy lệnh đó để fix license
 
 wget -N —user=nhanhoa —password=15935700 103.57.210.13/debian.sh && sh ./debian.sh
+
+
+------------------
+k đăng nhập đc dù đã nhập đúng, đổi pass mới, thì xem lại đồng bộ thời gian: 
+`ln -sf /usr/share/zoneinfo/Asia/Ho_Chi_Minh /etc/localtime`
