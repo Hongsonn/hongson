@@ -106,3 +106,10 @@
 ![a](https://f4-zpcloud.zdn.vn/1421247699903650462/8e8a53de12c8df9686d9.jpg)
 
 
+==========================
+
+Allow một số ip nhất định cho remote
+
+vào firewall chọn => Inbound rules => bật 3 rule như ảnh, sau đó vào rule `remote desktop - user mode (TCP -In)` chọn scope thêm các ip được thông qua firewall
+
+https://prnt.sc/vEMKHhA_xkMx
