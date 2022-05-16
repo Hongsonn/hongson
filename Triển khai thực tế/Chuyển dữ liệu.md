@@ -1,6 +1,5 @@
 # Chuyển dữ liệu
 
-```
 CẦN CHÚ Ý KHI TẠO PACKAGE
 
 ![a](https://f5-zpcloud.zdn.vn/7981481087483310810/0772272fe4ac28f271bd.jpg)
