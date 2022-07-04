@@ -101,12 +101,8 @@ snap remove loop0
 ### IV. Xóa người dùng
 
 ```
-userdel username  // xóa user
+sudo deluser --remove-home username
 
-userdel -r username   // xóa user cùng thư mục người dùng
-
-sudo killall -u username    // xóa user cùng các tiến trình của user
-
-sudo killall -f username    // xóa user kể cả đang login
+id username  // để kiểm tra xem người dùng có tồn tại
 
 ```
