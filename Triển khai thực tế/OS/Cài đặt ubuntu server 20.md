@@ -89,6 +89,11 @@ ufw allow ssh
 service ssh restart
 ```
 
-### III. Mount / Umount
+### III. Xóa snap 
 
-1. 
+Tham khảo link https://discuss.getsol.us/d/4821-correctly-remove-the-dev-loop0-squashfs-created-by-snap/9
+```
+sudo snap list --all
+umount /dev/loop0
+snap remove loop0
+```

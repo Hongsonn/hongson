@@ -96,7 +96,7 @@ dc@123 là mật khẩu mới của tài khoản adminstrator
 ![](../img/dones.png)
 
 
-### III. Nếu không sử dụng được 2 cách trên
+### III. Nếu không sử dụng được 2 cách trên ta s
 
 
 
