@@ -97,3 +97,16 @@ sudo snap list --all
 umount /dev/loop0
 snap remove loop0
 ```
+
+### IV. Xóa người dùng
+
+```
+userdel username  // xóa user
+
+userdel -r username   // xóa user cùng thư mục người dùng
+
+sudo killall -u username    // xóa user cùng các tiến trình của user
+
+sudo killall -f username    // xóa user kể cả đang login
+
+```
