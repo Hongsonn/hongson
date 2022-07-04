@@ -100,6 +100,8 @@ snap remove loop0
 
 ### IV. Xóa người dùng
 
+Tham khảo: https://www.cyberciti.biz/faq/delete-a-user-account-on-ubuntu-linux/
+
 ```
 sudo deluser --remove-home username
 
