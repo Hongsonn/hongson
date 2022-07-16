@@ -19,6 +19,10 @@ yum install iperf -y
 ethtool eth0
 Supported ports: [ TP ] - là card bình thường 
 
+Supported ports: [ FIBRE ] - là card quang
+
+https://prnt.sc/YVIjI29K-UIH
+
 
 -----------------------------------
 Kiểm tra độ tương thích giữa 2 cpu của server:
