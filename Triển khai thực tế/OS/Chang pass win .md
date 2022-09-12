@@ -1,6 +1,6 @@
-# Hướng dẫn reset pass trong windows
+# Hướng dẫn reset pass trong windows 
 
-### I. Trường hợp xác nhận được là có nhận ổ cứng:
+### I. Change pass sử dụng usb boot
 
 1. Sử dụng file iso.
 - Ta sẽ tạo 1 usb boot từ file iso để sử dụng.
@@ -49,7 +49,7 @@ dc@123 là mật khẩu mới của tài khoản adminstrator
 ![a](https://f5-zpcloud.zdn.vn/1100543350775590077/74fa21349d4b5015095a.jpg)
 
 
-### II. Trường hợp không nhận ổ cứng (không truy cập được vào ổ chứa os):
+### II. Change pass sử dụng tool:
 
 1. Sử dụng tool để reset pass:
 - Ta có thể sử dụng cho mình các phần mềm cứu hộ như win PE: tạo USB BOOT - WINPE
@@ -96,7 +96,7 @@ dc@123 là mật khẩu mới của tài khoản adminstrator
 ![](../img/dones.png)
 
 
-### III. Nếu không sử dụng được 2 cách trên ta s
+### III. Change pass bằng cách sử dụng kvm ( đối với server vật lý)
 
 
 
