@@ -1,9 +1,12 @@
 Sử dụng iperf để test
+
+```
 https://elkano.org/blog/testing-10g-network-iperf/
 yum install epel-release -y
 yum install iperf -y
 sudo iperf -s                                       // Mở kết nối để tiếp nhận các traffic
 sudo iperf -c 172.17.16.78 -i1 -t 900 -m            // Thay địa chỉ ip - Nơi bắn các trafic tiến vào server " sudo iperf -s "   ---- Thực hiện cho tới khi đạt giới hạn dây quang (VD quang 40GB - test trên 30 là ok)
+```
 
 Để kiểm tra ta sử dụng lệnh `nload`
 
