@@ -1,6 +1,6 @@
 # Hướng dẫn reset pass trong windows 
 
-### I. Change pass sử dụng usb boot
+### I. Change pass sử dụng usb boot sử dụng file iso
 
 1. Sử dụng file iso.
 - Ta sẽ tạo 1 usb boot từ file iso để sử dụng.
