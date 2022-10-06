@@ -212,4 +212,10 @@ systemctl restart haproxy
 systemctl enable haproxy
 ```
 
+**Kết quả**
+![a](https://f7-zpcloud.zdn.vn/4523648027570904852/1765d173dd2a1a74433b.jpg)
 
+- Do cấu hình sticky session trên request vì vậy trong cùng 1 thời điểm chỉ có thể kết nối tới 1 web server.
+Để có thể kiểm tra webserver còn lại, ra có thể truy cập ẩn danh.
+
+![a](https://f5-zpcloud.zdn.vn/6128680416116795925/13c79c60f03837666e29.jpg)
