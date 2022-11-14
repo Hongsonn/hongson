@@ -16,6 +16,7 @@ https://prnt.sc/PATsyc-bkyet
 Để kiểm tra card mạng trên máy 
 
 yum install epel-release -y
+
 yum install iperf -y
 
 ----------
