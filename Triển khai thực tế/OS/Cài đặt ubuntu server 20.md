@@ -108,3 +108,30 @@ sudo deluser --remove-home username
 id username  // để kiểm tra xem người dùng có tồn tại
 
 ```
+
+# Ubutu 22:
+
+```
+# This is the network config written by 'subiquity'
+network:
+  ethernets:
+    eno1:
+      dhcp4: no
+      addresses:
+        - a.b.c.d/xy
+      gateway4: a.b.c.e
+      nameservers:
+        addresses:
+          - 8.8.8.8
+          - 8.8.4.4
+    eno2:
+      dhcp4: true
+    eno3:
+      dhcp4: true
+    eno4:
+      dhcp4: true
+  version: 2
+
+```
+
+![a](https://f8-zpcloud.zdn.vn/3281866082208179565/1c4144ec226df933a07c.jpg)
