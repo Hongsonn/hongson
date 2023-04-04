@@ -38,4 +38,16 @@
 
 ![a](https://f5-zpcloud.zdn.vn/3961371693455980008/877012af36adfbf3a2bc.jpg)
 
+- Sau đó restart lại service remote desktop
+- bật multi remote desktop
 
+```
+Ah, I understand now. If you want to enable multiple remote desktop connections on a Windows 10 computer, you can follow these steps:
+
+Press the Windows key + R to open the Run dialog box.
+Type "gpedit.msc" and press Enter to open the Local Group Policy Editor.
+In the left pane of the Local Group Policy Editor, navigate to Computer Configuration > Administrative Templates > Windows Components > Remote Desktop Services > Remote Desktop Session Host > Connections.
+In the right pane, double-click on "Restrict Remote Desktop Services users to a single Remote Desktop Services session".
+Select "Disabled" and click OK.
+Close the Local Group Policy Editor and restart your computer.
+```
