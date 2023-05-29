@@ -140,3 +140,14 @@ Sau đó thêm dòng `rw init=/sysroot/bin/sh`
 - Đăng nhập với mật khẩu vừa tạo ra:
 
 ![a](https://f5-zpcloud.zdn.vn/6820230524895797056/64f0639416d9db8782c8.jpg)
+
+
+### IV. thay đổi thứ tự boot của các phiên bản centos 7 khi tiến hành bôt vào ó
+
+`vi /etc/default/grub`
+
+- Tìm dòng GRUB_DEFAULT và chỉnh giá trị theo thứ tự boot muốn đặt. Lưu ý rằng giá trị này được đếm từ 0, tức là 0 là phiên bản đầu tiên, 1 là phiên bản thứ hai, và cứ tiếp tục như vậy. Ví dụ, để boot vào CentOS 7 thứ hai trong danh sách, giá trị GRUB_DEFAULT sẽ là 1.
+
+- Nếu muốn thời gian chờ trước khi tự động boot giảm xuống, bạn có thể chỉnh sửa giá trị của GRUB_TIMEOUT thành thời gian mong muốn (tính bằng giây).
+
+- Chạy lệnh sau để cập nhật grub2: `grub2-mkconfig -o /boot/grub2/grub.cfg`
