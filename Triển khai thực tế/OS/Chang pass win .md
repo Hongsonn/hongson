@@ -37,7 +37,7 @@ copy cmd.exe Utilman.exe
 
 ![a](https://f5-zpcloud.zdn.vn/3970345531299934794/55d8ee4c7833b56dec22.jpg)
 
-8. Chờ server khởi động thành công. Ấn tổ hợp phím `Windows + U` để mở cửa sổ Command Prompt. Sau đó sử dụng lệnh: 
+8. Chờ server khởi động thành công. Ấn tổ hợp phím `Windows + U` (ấn phím windows và phím u) để mở cửa sổ Command Prompt. Sau đó sử dụng lệnh: 
 `net user administrator dc@123`
 
 dc@123 là mật khẩu mới của tài khoản adminstrator
