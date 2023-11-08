@@ -6,12 +6,14 @@
 
 An event is recorded in the Lifecycle Controller log file when this feature is enabled or disabled.
 
-To disable the HTTP to HTTPs redirection:
-racadm set iDRAC.Webserver.HttpsRedirection Disabled
-To enable HTTP to HTTPs redirection:
-racadm set iDRAC.Webserver.HttpsRedirection Enabled
-To view the status of the HTTP to HTTPs redirection:
-racadm get iDRAC.Webserver.HttpsRedirection
+- To disable the HTTP to HTTPs redirection:
+`racadm set iDRAC.Webserver.HttpsRedirection Disabled`
+
+- To enable HTTP to HTTPs redirection:
+`racadm set iDRAC.Webserver.HttpsRedirection Enabled`
+
+- To view the status of the HTTP to HTTPs redirection:
+`racadm get iDRAC.Webserver.HttpsRedirection`
 
 ![a](https://f10-zpcloud.zdn.vn/6923122767467325993/65d06450fc22227c7b33.jpg)
 
