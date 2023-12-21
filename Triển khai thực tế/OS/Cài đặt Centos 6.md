@@ -55,7 +55,7 @@
 
 ![a](https://f5-zpcloud.zdn.vn/4732743955014637886/de708994a1fa6ca435eb.jpg)
 
-- Kiểm tra lại các thông tin xem đã chính xác hết chưa. Ấn next để tiếp tục
+- Kiểm tra lại các thông tin xem đã chính xác hết chưa. `Install boot loader on /dev/sdb1` Ấn next để tiếp tục
 
 ![a](https://f4-zpcloud.zdn.vn/954951912999794135/b66aaca882c64f9816d7.jpg)
 
