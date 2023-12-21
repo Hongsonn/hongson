@@ -1,0 +1,40 @@
+all:
+  hosts:
+    ctl1:
+       ansible_host: 103.170.122.7
+       access_ip: 103.170.122.7
+       ip: 103.170.122.7
+       ansible_ssh_user: root
+       ansible_ssh_pass: Passw0rd@_
+    ctl2:
+       ansible_host: 103.170.122.8
+       access_ip: 103.170.122.8
+       ip: 103.170.122.8
+       ansible_ssh_user: root
+       ansible_ssh_pass: Passw0rd@_
+    ctl3:
+       ansible_host: 103.170.122.9
+       access_ip: 103.170.122.9
+       ip: 103.170.122.9
+       ansible_ssh_user: root
+       ansible_ssh_pass: Passw0rd@_
+    com1:
+       ansible_host: 103.170.122.5
+       access_ip: 103.170.122.5
+       ip: 103.170.122.5
+       ansible_ssh_user: root
+       ansible_ssh_pass: Passw0rd@_
+    com2:
+       ansible_host: 103.170.122.6
+       access_ip: 103.170.122.6
+       ip: 103.170.122.6
+       ansible_ssh_user: root
+       ansible_ssh_pass: Passw0rd@_
+  children:
+    onestor:
+      hosts:
+        ctl1:
+        ctl2:
+        ctl3:
+        com1:
+        com2:
