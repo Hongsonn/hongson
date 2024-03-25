@@ -6,7 +6,7 @@ Active: Chạy lệnh
 
 slmgr /ipk  WC2BQ-8NRM3-FDDYY-2BFGV-KHKQY
 
-slmgr /skms kms.nhanhoasoft.net
+slmgr /skms kms1.nhanhoasoft.net
 
 slmgr /ato
 
