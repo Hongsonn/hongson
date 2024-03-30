@@ -135,3 +135,33 @@ network:
 ```
 
 ![a](https://f8-zpcloud.zdn.vn/3281866082208179565/1c4144ec226df933a07c.jpg)
+
+# RESET PASSWORD
+
+- Ấn phím `shift` sau khi reboot server để vào menu GRUB 
+- Sau đó ấn phím `e`:
+
+![alt text](/Triển%20khai%20thực%20tế/OS/imgs/image.png)
+
+- Tìm xuống dòng `ro  quiet splash $vt_handoff`
+
+![alt text](/Triển%20khai%20thực%20tế/OS/imgs/image-1.png)
+
+- Sửa thành `rw init=/bin/bash`
+
+![alt text](/Triển%20khai%20thực%20tế/OS/imgs/image-2.png)
+
+- Ấn Ctr + X hoặc F10
+- Có quyền truy cập vào Root shell mà không cần mật khẩu
+
+![alt text](/Triển%20khai%20thực%20tế/OS/imgs/image-3.png)
+
+- Thực hiện lần lượt:
+
+```
+mount | grep -w /                       Đảm bảo với quyền truy cập phân vùng khởi động với user root và quyền đọc, ghi
+/dev/sda2 on type ext4 (rw,realtime)
+
+passw root                              Thay đổi pass root
+exec /sbin/init                         Reboot
+```
