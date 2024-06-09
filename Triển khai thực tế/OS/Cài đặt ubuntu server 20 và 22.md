@@ -83,6 +83,8 @@ ufw allow ssh
 
 ![a](https://f5-zpcloud.zdn.vn/7734485907080429510/3ab3972c2f13e24dbb02.jpg)
 
+![alt text](image.png)
+
   - Sau đó, ta sẽ restart lại dịch vụ ssh
 
 ```
