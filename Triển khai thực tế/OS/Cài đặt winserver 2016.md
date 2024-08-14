@@ -21,6 +21,8 @@
 
 5. Thiết lập port remote:
 
+- Allow port remote trên fw
+
 - Truy cập regedit
 
 ![a](https://f5-zpcloud.zdn.vn/7676020419751501149/67d59165b96774392d76.jpg)
