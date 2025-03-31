@@ -59,6 +59,8 @@ foreman-installer --scenario katello
 The full log is at /var/log/foreman-installer/katello.log
 ```
 
+![alt text](image-62.png)
+
 -------------------
 
 ### I. Foreman sử dụng Smart Proxy để quản lý các dịch vụ như DHCP, DNS, và TFTP
